@@ -615,11 +615,10 @@ footer {
     .conteiner__display{
         padding: 10rem 0 10rem 0;
         margin: auto;
-        text-align: center;
-        background-position: right;
+        text-align: end ;
     }
     .display .display__title{
-        font-size: 1.3rem
+        font-size: 1.3rem;
     }
     .display .display__parrafo{
         font-size: 1.2rem;
@@ -713,6 +712,7 @@ footer {
     .conteiner__display{
         padding: 10rem 0 10rem 0;
         margin: auto;
+        text-align: left;
         background-position: right;
     }
     .display .display__title{
