@@ -1,0 +1,803 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+.conteiner {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+}
+
+
+/* -------------------------------------------------HEADER--------------------------------------------- */
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 0.5rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    border: solid 0.02rem rgb(0, 0, 0);    
+}
+
+.nav__link {
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+.nav__link:hover {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__item {
+    margin: 0 0 0 5rem;
+}
+/* ----------------------------------------------------INDEX------------------------------------------- */
+.conteiner__display {
+    background-image: url(../image/pexels-mahima-1250260\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 12rem;
+    margin: auto;
+    position: relative;
+}
+
+.conteiner__display:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+    opacity: 0.5;
+}
+
+.display {
+    color: white;
+    font-weight: 400;
+    z-index: 1;
+    
+}
+
+.display .display__title {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    margin: 0 0rem 1rem 0rem;
+    text-transform: uppercase;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+     opacity: 0;
+   }
+    100% {
+     opacity: 1;
+   }
+}
+
+.display .display__parrafo {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    animation-duration: 2.5s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+     opacity: 0;
+   }
+    100% {
+     opacity: 1;
+   }
+}
+
+
+.display .display__buttom{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-weight: 800;
+    border: inherit;
+    border-radius: 5px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+     opacity: 0;
+   }
+    100% {
+     opacity: 1;
+   }
+}
+
+
+.display .display__buttom:hover {
+    color: white;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    background-color: tomato;
+}
+.section-servicios {
+    border-bottom: solid 2px black;
+    margin-bottom: 2rem;
+}
+.servicios-pasos {
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0rem 0 2rem 0;
+    
+}
+
+.servicios-pasos h3 {
+    font-size: 2rem;
+    margin: 1rem;
+ }
+
+.titulo-servicios h2 {
+    color: rgb(53, 158, 106);;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 0.5rem 0 2rem 0;
+    text-align: center;
+    padding-top: 2rem;
+}
+.servicios-pasos img {
+     width: 250px;
+     height: 250px;
+     width: 100%;
+ }
+.servicios-pasos .residuos {
+     width: 250px;
+     height: 250px;
+     width: 100%;
+}
+
+.beneficios__title h2{
+     font-size: 2.4rem;
+     text-align: center;
+     font-weight: 700;
+     color: rgb(53, 158, 106);;
+     margin-bottom: 2rem;
+ }
+
+ .section__beneficios {
+     display: flex;
+ }
+
+ .section__beneficios .image__beneficios {
+     width: 100%;
+     height: 300px;
+     display: flex;
+     align-content: center;
+     align-items: center;
+     color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+
+ }
+
+.section__beneficio-two {
+    display: flex;
+}
+.section__beneficio-two .image__beneficios { 
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    text-align: center;
+}
+ .section__beneficios .bosques {
+     background-image: url(../image/pexels-yaroslav-shuraev-1834393.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+     z-index: -2;
+ }
+ .bosques:before {
+     z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+
+.section__beneficios .oceanos {
+    background-image: url(../image/oceano.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -2
+}
+.oceanos:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+
+.section__beneficios .energia {
+    background-color: rgb(236, 236, 15);
+    position: relative;
+    z-index: -2;
+}
+.energia:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+.section__beneficios .residuos {
+    z-index: -2;
+    background-image: url(../image/contaminacion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.residuos:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+
+.section__beneficio-two .emiciones {
+    z-index: -2;
+    background-image: url(../image/oso\ polar.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.emiciones:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+
+.section__beneficio-two .petroleo {
+    z-index: -2;
+    background-image: url(../image/petroleo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.petroleo:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+.section__beneficio-two .dinero {
+    z-index: -2;
+    background-color: rgb(70, 180, 125);
+    position: relative;
+}
+.dinero:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+
+.section__beneficio-two .planeta {
+    z-index: -2;
+    background-image: url(../image/planeta2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.planeta:before {
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+}
+/* ------------------------------------------------FOOTER----------------------------------------------*/
+
+footer {
+    background-image: linear-gradient(to right, rgb(114, 114, 114),  rgba(50, 48, 52));
+    color: rgb(247, 247, 247);
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+.footer__section {
+    text-align: center;
+}
+
+.footer__parrafo {
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+.footer__parrafo-two {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.footer__icon i {
+    margin: 0.8rem 1.2rem 0.8rem 1.2rem;
+    font-size: 30px;
+}
+
+/* ------------------------------------------------SERVICIOS------------------------------------------ */
+.conteiner__info {
+    border-bottom: solid 1px rgb(48, 41, 39);
+    border-top:  solid 1px rgb(48, 41, 39);
+}
+
+.info {
+    padding: 2rem 0rem 3rem 0rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info__section {
+    width: 50%;
+}
+
+.info__tltle {
+    margin: 1rem 0 1rem 0;
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.info__parrafo {
+    margin: 1rem 0rem 2rem 0rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+.info__buttom {
+    background-color: rgb(246, 248, 241);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-weight: 800;
+    border: inherit;
+    border-radius: 5px 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+}
+
+@keyframes aparecer {
+    0% {
+     opacity: 0;
+   }
+    100% {
+     opacity: 1;
+   }
+}
+
+.info .info__buttom:hover {
+    color: white;
+    padding: 0.8rem 3rem 0.8rem 3rem;
+    background-color: tomato;
+}
+
+.info img {
+    width: 200px;
+    height: 200px;
+}
+
+
+/* -----------------------------------------------NOSOTROS--------------------------------------------- */
+.agentes-cambio {
+    padding: 60px 45px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.agentes-cambio h2 {
+    font-size: 2rem;
+    width: 100%;
+    color: rgb(53, 158, 106);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.agentes-cambio .text-agentes {
+    width: 52%;
+}
+
+.agentes-cambio .text-agentes p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    margin-bottom: 2rem;
+}
+
+.agentes-cambio img {
+    width: 32%;
+    opacity: 95%;
+}
+
+.somos-agentes {
+    padding: 0px 45px 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.somos-agentes img {
+    width: 100%;
+    opacity: 95%;
+}
+
+.somos-agentes .conteiner-somos {
+    width: 50%;
+}
+
+.somos-agentes .conteiner-somos .text-somos {
+    margin-top: 70px;
+}
+
+.somos-agentes .conteiner-somos .text-somos h3 {
+    font-size: 1.5rem;
+    color: rgb(53, 158, 106);;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.somos-agentes .conteiner-somos .text-somos p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    margin-bottom:  2rem;
+}
+
+.somos-agentes .conteiner-somos .text-somos:nth-child(1) {
+    margin-left: 20px;
+}
+
+.somos-agentes .conteiner-somos .text-somos:nth-child(2) {
+    margin-left: 80px;
+}
+
+.somos-agentes .conteiner-somos .text-somos:nth-child(3) {
+    margin-left: 40px;
+}
+/* -----------------------------------------------------CONTACTO---------------------------------------- */
+
+
+.form-contactos { 
+    text-align: center;
+}
+
+.section-contactos {
+    text-align: center;
+    display: flex;
+}
+
+.section-disponibilidad h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.icono-contacto {
+    display: flex;
+}
+
+/* -------------------------------------------------------AYUDA-------------------------------------------- */  
+
+.display__ayuda h2 {
+    font-size: 3rem;
+    font-weight: 400;
+    padding: auto;
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.display__section h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.display__section p {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 1rem 1rem 1rem;
+}
+
+/* ------------------------------------------MEDIA QUERIES------------------------- */
+
+@media (max-width: 480px) {
+    
+    .conteiner {
+        width: 95%;
+    }
+    .conteiner__display{
+        padding: 10rem 0 10rem 0;
+        margin: auto;
+        text-align: center;
+        background-position: right;
+    }
+    .display .display__title{
+        font-size: 1.3rem
+    }
+    .display .display__parrafo{
+        font-size: 1.2rem;
+    }
+    .nav__list{
+        display: block;
+    }
+    .nav__link{
+        font-size: 1rem;
+    }
+    .servicios-pasos {
+        width: 100%;
+        display: block;
+    }
+    .titulo-servicios h2{
+        font-size: 1.8rem;
+    }
+    .pasos h3{
+        font-size: 1.3rem;
+    }
+    .section__beneficios{
+        display: block;
+    }
+    .section__beneficios h3{
+        font-size: 1.3rem;
+    }
+    .beneficios__title h2{
+        font-size: 1.8rem;
+    }
+
+    .section__beneficio-two{
+        display: block;
+    }
+    .section__beneficio-two h3{
+        font-size: 1.5rem;
+    }
+
+    .conteiner .agentes-cambio {
+        display: block;
+    }
+    .somos-agentes{
+        display: block;
+        width: 100%;
+    }
+    .agentes-cambio h2 {
+        font-size: 1.5rem;
+    }
+    .agentes-cambio img{
+        width: 100%;
+    }
+    .agentes-cambio .text-agentes{
+        width: 100%;   
+    }
+    .somos-agentes .conteiner-somos{
+        width: 100%;
+    }
+    .somos-agentes .conteiner-somos .text-somos:nth-child(1) {
+        margin-left: 0;
+    }
+    
+    .somos-agentes .conteiner-somos .text-somos:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .somos-agentes .conteiner-somos .text-somos:nth-child(3) {
+        margin-left: 0;
+    }
+
+    footer {
+        background-image: linear-gradient(to bottom, rgb(114, 114, 114),  rgba(50, 48, 52));
+    }
+    .footer__parrafo {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    
+    .footer__icon i {
+        font-size: 25px;
+    }
+    .footer__parrafo-two{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .conteiner {
+        width: 95%;
+    }
+    .conteiner__display{
+        padding: 10rem 0 10rem 0;
+        margin: auto;
+        background-position: right;
+    }
+    .display .display__title{
+        font-size: 1.3rem
+    }
+    .display .display__parrafo{
+        font-size: 1.2rem;
+    }
+    .nav__list{
+        display: block;
+    }
+    .nav__link{
+        font-size: 1rem;
+    }
+    .servicios-pasos {
+        width: 100%;
+        display: block;
+    }
+    .titulo-servicios h2{
+        font-size: 1.8rem;
+    }
+    .pasos h3{
+        font-size: 1.3rem;
+    }
+    .section__beneficios{
+        display: block;
+    }
+    .section__beneficios h3{
+        font-size: 1.3rem;
+    }
+    .beneficios__title h2{
+        font-size: 1.8rem;
+    }
+
+    .section__beneficio-two{
+        display: block;
+    }
+    .section__beneficio-two h3{
+        font-size: 1.5rem;
+    }
+
+    .conteiner .agentes-cambio {
+        display: block;
+    }
+    .somos-agentes{
+        display: block;
+        width: 100%;
+    }
+    .agentes-cambio h2 {
+        font-size: 1.5rem;
+    }
+    .agentes-cambio img{
+        width: 100%;
+    }
+    .agentes-cambio .text-agentes{
+        width: 100%;   
+    }
+    .somos-agentes .conteiner-somos{
+        width: 100%;
+    }
+    .somos-agentes .conteiner-somos .text-somos:nth-child(1) {
+        margin-left: 0;
+    }
+    
+    .somos-agentes .conteiner-somos .text-somos:nth-child(2) {
+        margin-left: 0;
+    }
+    
+    .somos-agentes .conteiner-somos .text-somos:nth-child(3) {
+        margin-left: 0;
+    }
+
+    footer {
+        background-image: linear-gradient(to bottom, rgb(114, 114, 114),  rgba(50, 48, 52));
+    }
+    .footer__parrafo {
+        font-size: 1.2rem;
+        font-weight: 100;
+    }
+    
+    .footer__icon i {
+        font-size: 25px;
+    }
+    .footer__parrafo-two{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+}
