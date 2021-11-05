@@ -615,7 +615,8 @@ footer {
     .conteiner__display{
         padding: 10rem 0 10rem 0;
         margin: auto;
-        text-align: end ;
+        text-align: left;
+        background-position: right;
     }
     .display .display__title{
         font-size: 1.3rem;
