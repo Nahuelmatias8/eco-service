@@ -525,6 +525,10 @@ footer {
     opacity: 95%;
 }
 
+.somos-agentes .imagen-flores {
+    display: none;
+}
+
 .somos-agentes .conteiner-somos {
     width: 50%;
 }
@@ -607,103 +611,6 @@ footer {
 
 /* ------------------------------------------MEDIA QUERIES------------------------- */
 
-@media (max-width: 480px) {
-    
-    .conteiner {
-        width: 95%;
-    }
-    .conteiner__display{
-        padding: 10rem 0 10rem 0;
-        margin: auto;
-        text-align: left;
-        background-position: right;
-    }
-    .display .display__title{
-        font-size: 1.3rem;
-    }
-    .display .display__parrafo{
-        font-size: 1.2rem;
-    }
-    .nav__list{
-        display: block;
-    }
-    .nav__link{
-        font-size: 1rem;
-    }
-    .servicios-pasos {
-        width: 100%;
-        display: block;
-    }
-    .titulo-servicios h2{
-        font-size: 1.8rem;
-    }
-    .pasos h3{
-        font-size: 1.3rem;
-    }
-    .section__beneficios{
-        display: block;
-    }
-    .section__beneficios h3{
-        font-size: 1.3rem;
-    }
-    .beneficios__title h2{
-        font-size: 1.8rem;
-    }
-
-    .section__beneficio-two{
-        display: block;
-    }
-    .section__beneficio-two h3{
-        font-size: 1.5rem;
-    }
-
-    .conteiner .agentes-cambio {
-        display: block;
-    }
-    .somos-agentes{
-        display: block;
-        width: 100%;
-    }
-    .agentes-cambio h2 {
-        font-size: 1.5rem;
-    }
-    .agentes-cambio img{
-        width: 100%;
-    }
-    .agentes-cambio .text-agentes{
-        width: 100%;   
-    }
-    .somos-agentes .conteiner-somos{
-        width: 100%;
-    }
-    .somos-agentes .conteiner-somos .text-somos:nth-child(1) {
-        margin-left: 0;
-    }
-    
-    .somos-agentes .conteiner-somos .text-somos:nth-child(2) {
-        margin-left: 0;
-    }
-    
-    .somos-agentes .conteiner-somos .text-somos:nth-child(3) {
-        margin-left: 0;
-    }
-
-    footer {
-        background-image: linear-gradient(to bottom, rgb(114, 114, 114),  rgba(50, 48, 52));
-    }
-    .footer__parrafo {
-        font-size: 1.2rem;
-        font-weight: 100;
-    }
-    
-    .footer__icon i {
-        font-size: 25px;
-    }
-    .footer__parrafo-two{
-        font-size: 0.8rem;
-        font-weight: 100;
-    }
-}
 
 @media (max-width: 768px) {
     
@@ -754,19 +661,31 @@ footer {
         font-size: 1.5rem;
     }
 
-    .conteiner .agentes-cambio {
+    .agentes-cambio {
         display: block;
+        padding: 1rem 0 0 0;
     }
     .somos-agentes{
+        padding: 0;
         display: block;
         width: 100%;
     }
     .agentes-cambio h2 {
         font-size: 1.5rem;
     }
-    .agentes-cambio img{
+    .agentes-cambio img {
         width: 100%;
     }
+    .somos-agentes img {
+        display: none;
+        padding-bottom: 1rem;
+    }
+    
+    .somos-agentes .imagen-flores {
+        display: block;
+        width: 100%;
+    }
+    
     .agentes-cambio .text-agentes{
         width: 100%;   
     }
