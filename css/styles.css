@@ -557,8 +557,8 @@ footer {
 }
 .pagos__icon {
     display: flex;
-    justify-content: space-evenly;
-    width: 50%;
+    justify-content: space-between;
+    width: 25%;
 }
 .pagos__icon i{
     font-size: 50px;
