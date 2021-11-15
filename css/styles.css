@@ -34,36 +34,8 @@ svg {
 
 
 /* -------------------------------------------------HEADER--------------------------------------------- */
-header {
-    background-color: rgb(255, 255, 255);
-    padding: 0.5rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    border: solid 0.02rem rgb(0, 0, 0);    
-}
 
-.nav__link {
-    font-size: 1.3rem;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: rgb(0, 0, 0);
-}
 
-.nav__link:hover {
-    font-weight: 700;
-    text-decoration: underline;
-}
-
-.nav__list {
-    list-style-type: none;
-    display: flex;
-}
-
-.nav__item {
-    margin: 0 0 0 5rem;
-}
 /* ----------------------------------------------------INDEX------------------------------------------- */
 .conteiner__display {
     background-image: url(../image/pexels-mahima-1250260\ \(1\).jpg);
@@ -75,14 +47,14 @@ header {
     position: relative;
 }
 
-.display {
+.section__display {
     color: white;
     font-weight: 400;
     z-index: 1;
     
 }
 
-.display .display__title {
+.section__display .display__titulo {
     margin-bottom: 0.5rem;
     font-size: 2.5rem;
     margin: 0 0rem 1rem 0rem;
@@ -101,7 +73,7 @@ header {
    }
 }
 
-.display .display__parrafo {
+.section__display .display__parrafo {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     animation-duration: 2.5s;
@@ -119,13 +91,13 @@ header {
 }
 
 
-.display .display__buttom{
+.section__display .display__boton{
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
     border: inherit;
     border-radius: 5px 0;
     cursor: pointer;
@@ -145,13 +117,13 @@ header {
 }
 
 
-.display .display__buttom:hover {
+.section__display .display__boton:hover {
     color: white;
     padding: 0.8rem 3rem 0.8rem 3rem;
     background-color: tomato;
 }
 .section-servicios {
-    background-color: rgb(255, 252, 247);
+    background-color: rgb(255, 255, 255);
     border-bottom: solid 2px black;
 }
 .servicios-pasos {
@@ -190,7 +162,7 @@ header {
 }
 
 .beneficios__title h2{
-    background-color: rgb(255, 252, 247);
+    background-color: rgb(255, 255, 255);
     padding: 2rem 0 2rem 0;
     margin: 0;
      font-size: 2.4rem;
@@ -399,147 +371,54 @@ footer {
 }
 
 /* ------------------------------------------------SERVICIOS------------------------------------------ */
-.conteiner__info {
-    border-bottom: solid 1px rgb(48, 41, 39);
-    border-top:  solid 1px rgb(48, 41, 39);
-}
-
-.info {
-    padding: 2rem 0rem 3rem 0rem;
+.title__servicios h2{
+    font-size: 2.5rem;
+    font-weight: 400;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
-.info__section {
-    width: 50%;
-}
-
-.info__tltle {
-    margin: 1rem 0 1rem 0;
-    font-size: 2.2rem;
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-.info__parrafo {
-    margin: 1rem 0rem 2rem 0rem;
-    font-size: 1.5rem;
-    font-weight: 100;
-}
-
-.info__buttom {
-    background-color: rgb(246, 248, 241);
-    color: rgb(0, 0, 0);
+.conteiner__suscripcion a{
     text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 800;
-    border: inherit;
-    border-radius: 5px 0;
-    cursor: pointer;
-    transition: all 0.3s;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
+    color: rgb(255, 255, 255);
 }
-
-@keyframes aparecer {
-    0% {
-     opacity: 0;
-   }
-    100% {
-     opacity: 1;
-   }
+.conteiner__suscripcion a:hover {
+    color:white;
 }
-
-.info .info__buttom:hover {
-    color: white;
-    padding: 0.8rem 3rem 0.8rem 3rem;
-    background-color: tomato;
+.suscripcion{
+    padding: 2rem 4rem 2rem 4rem;
+    background-image: linear-gradient(to right top, #54e0ce, #3cdcbd, #27d7a9, #1dd293, #23cc7a, #23cd6d, #28ce60, #30ce50, #2bd64b, #26de45, #20e53f, #1bed36);    border-radius: 30px;
 }
-
-.info img {
-    width: 200px;
-    height: 200px;
+.suscripcion-imagen{
+    text-align: center;
+    padding: 1rem 0 2rem 0;
 }
-.card__section {
-    background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+.suscripcion img{
+    width: 150px;
+    height: 150px;
 }
-.conteiner__card{
-    color: rgb(0, 0, 0);
-}
-.card__title {
+.suscripcion h2{
+    margin-bottom: 1.5rem;
     font-size: 3rem;
-    font-weight: 400;
-    padding: 5rem 0 1rem 0;
-    margin: 0;
-    color: white;
-}
-.card__image {
-    display: flex;
-    align-items: center;
-}
-.card__image h3 {
-    font-size: 2rem;
-    margin-left: 1rem;
-}
-.card__image img {
-    width: 75px;
-    height: 75px;
-}
-
-.card__info {
-    font-size: 2rem;
-    font-weight: 400;
-    padding: 2rem 0 1rem 0;
-    margin: 0;
-}
-
-.card__list {
-    padding-bottom: 4rem;
-    margin-left: 1.5rem;
-    font-size: 1.5rem;
-    font-weight: 400;
-}
-.card__buttom {
-    padding-bottom: 7rem;
-}
-.card__buttom a{
-    background-color: rgb(246, 248, 241);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     font-weight: 800;
-    border: inherit;
-    border-radius: 5px 0;
-    cursor: pointer;
-    transition: all 0.3s;
-    animation-duration: 3s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
+    text-align: center;
+
 }
-
-
-@keyframes aparecer {
-    0% {
-     opacity: 0;
-   }
-    100% {
-     opacity: 1;
-   }
+.suscripcion h3{
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: center;
+    border-bottom:solid 2px black;
 }
-
-.card__buttom a:hover {
-    color: white;
-    padding: 0.8rem 3rem 0.8rem 3rem;
-    background-color: tomato;
+.suscripcion h4{
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.card__list .card__list--item {
+    margin-bottom: 0.5rem;
 }
 .conteiner__pagos{
     display: flex;
@@ -653,9 +532,13 @@ footer {
 }
 /* -----------------------------------------------------CONTACTO---------------------------------------- */
 
-
-.form-contactos { 
-    text-align: center;
+.conteiner__contactos{
+    
+    background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 15rem;
 }
 
 .section-contactos {
@@ -709,10 +592,10 @@ footer {
         margin: auto;
         background-position: right;
     }
-    .display .display__title{
+    .section__display .display__titulo{
         font-size: 1.3rem;
     }
-    .display .display__parrafo{
+    .section__display .display__parrafo{
         font-size: 1.2rem;
     }
     .nav__list{
@@ -806,31 +689,7 @@ footer {
         font-size: 0.8rem;
         font-weight: 100;
     }
-    .card__title{
-        font-size: 1.5rem;
-        padding-top: 0.5rem;
-    }
-    .card__image{
-        display: block;
-    }
-    .card__image h3{
-        color: white;
-        margin-left: 0;
-    }
-    .card__image img{
-        display: none;
-    }
-    .card__info{
-        color: white;
-        font-size: 1.5rem;
-    }
-    .card__list{
-        font-size: 1.5rem;
-        color: white;
-    }
-    .card__buttom{
-        padding-bottom: 2rem;
-    }
+    
     .conteiner__pagos{
         display: block;
     }
@@ -847,17 +706,23 @@ footer {
         width: 100%;
         justify-content: space-evenly;
     }
-    .conteiner__info{
+    .conteiner__suscripcion{
         display: block;
     }
-    .info__section{
-        width: 100%;
+    .suscripcion{
+        margin-bottom: 2rem;
+        padding: 0.5rem;
     }
-    .info__title{
-        font-size: 1.5rem;
+    .title__servicios h2{
+        font-size: 2rem;
+        font-weight: 600;
     }
-    .info img{
-        width: 170px;
-        height: 170px;
+    .conteiner__contactos{
+    
+        background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 2rem;
     }
 }
