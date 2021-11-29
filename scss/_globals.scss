@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+svg {
+    vertical-align: middle;
+}
+.conteiner {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 1320px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+}
+
