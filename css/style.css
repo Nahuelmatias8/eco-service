@@ -160,7 +160,7 @@ svg {
 .somos__parrafo {
   margin: 0;
   font-size: 1.5rem;
-  font-weight: 100;
+  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -453,6 +453,20 @@ svg {
   background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
+.button-nav:focus {
+  color: #49AB30;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #49AB30;
+}
+
 footer {
   background-image: linear-gradient(to right, #727272, #323034);
   color: #f7f7f7;
@@ -675,6 +689,10 @@ footer {
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0 1rem 1rem 1rem;
+}
+
+.accordion-header {
+  box-shadow: none;
 }
 
 .conteiner__contactos {

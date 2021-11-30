@@ -34,3 +34,15 @@
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
 }
+
+.button-nav:focus{
+    color: $color-primario;
+}
+.nav-link{
+    color: black;
+    text-decoration: none;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color: $color-primario;
+}
