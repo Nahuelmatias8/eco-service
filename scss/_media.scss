@@ -14,12 +14,6 @@
     .section__display .display__parrafo{
         font-size: 1.2rem;
     }
-    .nav__list{
-        display: block;
-    }
-    .nav__link{
-        font-size: 1rem;
-    }
     .servicios-pasos {
         width: 100%;
         display: block;
@@ -29,6 +23,12 @@
     }
     .pasos h3{
         font-size: 1.5rem;
+    }
+    .somos__parrafo{
+        font-size: 1.5rem;
+        font-weight: 400;
+        display: block;
+   
     }
     .section__beneficios{
         display: block;
@@ -57,7 +57,22 @@
         width: 100%;
     }
     .agentes-cambio h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
+        font-weight: $weight-font;
+        text-align: center;
+    }
+    .somos-agentes .conteiner-somos .text-somos p {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        margin-bottom:  2rem;
+    }
+    .somos-agentes .conteiner-somos .text-somos h3 {
+        font-size: 1.8rem;
+        font-weight: $weight-font;
+        margin-bottom: 1rem;
+        text-align: center;
     }
     .agentes-cambio img {
         width: 100%;
@@ -131,7 +146,7 @@
     }
     .title__servicios h2{
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: $weight-font;
     }
     .conteiner__contactos{
     
@@ -161,10 +176,40 @@
         padding-bottom: 2.3rem;
     }
     .somos_title h2{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     .servicios-pasos img{
         width: 150px;
         height: 150px;
+    }
+    .section__beneficios .image__beneficios h3{
+        font-size: 1.5rem;
+    }
+    .section__beneficio-two .image__beneficios h3{
+        font-size: 1.5rem;
+    }
+    .display__ayuda h2 {
+        font-size: 1.8rem;
+        font-weight: $weight-font;
+        padding: 1rem 0 1rem 0;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    .display__section{
+        padding-bottom: 3rem;
+        
+    }
+    .display__section h4 {
+        font-size: 1.3rem;
+        font-weight: 300;
+        margin: 0.5rem 0 0.5rem 0;
+    }
+    
+    .display__section p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        margin: 0 1rem 1rem 1rem;
     }
 }

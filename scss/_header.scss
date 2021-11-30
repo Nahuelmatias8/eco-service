@@ -4,12 +4,12 @@
     max-width: 1600px;
 }
 .display__boton-nav{
-    background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+    background-image: $btn-background;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 700;
+    font-weight: 500;
     border: inherit;
     border-radius: 5px 0;
     cursor: pointer;
@@ -32,5 +32,5 @@
 .display__boton-nav:hover {
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+    background-image: $btn-background-hover;
 }

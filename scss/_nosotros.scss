@@ -8,10 +8,10 @@
 }
 
 .agentes-cambio h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     width: 100%;
-    color: rgb(53, 158, 106);
-    font-weight: 700;
+    color: $color-primario;
+    font-weight: $weight-font;
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
@@ -21,7 +21,7 @@
 }
 
 .agentes-cambio .text-agentes p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
     color: rgb(0, 0, 0);
     font-weight: 100;
@@ -59,15 +59,15 @@
 }
 
 .somos-agentes .conteiner-somos .text-somos h3 {
-    font-size: 1.5rem;
-    color: rgb(53, 158, 106);;
+    font-size: 1.8rem;
+    color: $color-primario;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $weight-font;
     margin-bottom: 1rem;
 }
 
 .somos-agentes .conteiner-somos .text-somos p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.8rem;
     color: rgb(0, 0, 0);
     font-weight: 100;

@@ -3,21 +3,21 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 35vh;
+    padding: 19rem 0 19rem 0;
     margin: auto;
     position: relative;
 }
 
 .section__display {
     color: white;
-    font-weight: 400;
     z-index: 1;
     
 }
 
 .section__display .display__titulo {
     margin-bottom: 0.5rem;
-    font-size: 3rem;
+    font-size: $big-font;
+    font-weight: $weight-font;
     margin: 0 0rem 1rem 0rem;
     text-transform: uppercase;
     animation-duration: 1s;
@@ -36,7 +36,8 @@
 
 .section__display .display__parrafo {
     margin-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: 400;
     animation-duration: 2.5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
@@ -53,12 +54,12 @@
 
 
 .display__boton{
-    background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+    background-image: $btn-background;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 700;
+    font-weight: $weight-font;
     border: inherit;
     border-radius: 5px 0;
     cursor: pointer;
@@ -81,7 +82,7 @@
 .display__boton:hover {
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+    background-image: $btn-background-hover;
 }
 .section-servicios {
     background-color: rgb(255, 255, 255);
@@ -98,14 +99,15 @@
 }
 
 .servicios-pasos h3 {
-    font-size: 2.3rem;
+    font-size: 2rem;
+    font-weight: 400;
     margin: 1rem;
  }
 
 .titulo-servicios h2 {
-    color: rgb(53, 158, 106);;
+    color: $color-primario;
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0.5rem 0 2rem 0;
     text-align: center;
     padding-top: 2rem;
@@ -119,16 +121,16 @@
  .somos_title h2{
      padding: 2rem;
      margin: auto;
-     font-size: 2.4rem;
+     font-size: 3rem;
      text-align: center;
-     font-weight: 700;
-     color: rgb(53, 158, 106);
+     font-weight: $weight-font;
+     color: $color-primario;
      border-top: solid 2px black;
  }
  .somos__parrafo{
      margin: 0;
-     font-size: 2rem;
-     font-weight: 400;
+     font-size: 1.5rem;
+     font-weight: 100;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -148,12 +150,12 @@
      padding-bottom: 4rem;
  }
  .boton__somos .display__boton--somos{
-    background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+    background-image: $btn-background;
     color: rgb(0, 0, 0);
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 700;
+    font-weight: 500;
     border: inherit;
     border-radius: 5px 0;
     cursor: pointer;
@@ -178,16 +180,15 @@
     margin: auto;
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+    background-image: $btn-background-hover;
 }
 .beneficios__title h2{
-    background-color: rgb(255, 255, 255);
     padding: 2rem 0 2rem 0;
     margin: 0;
-     font-size: 2.4rem;
+     font-size: 3rem;
      text-align: center;
-     font-weight: 700;
-     color: rgb(53, 158, 106);
+     font-weight: $weight-font;
+     color: $color-primario;
      border-top: solid 2px black;
      
  }
@@ -203,11 +204,12 @@
      align-content: center;
      align-items: center;
      color: rgb(255, 255, 255);
-    font-size: 1.5rem;
     text-align: center;
-
  }
-
+ .section__beneficios .image__beneficios h3{
+     font-size: 2rem;
+     font-weight: 400;
+ }
 .section__beneficio-two {
     display: flex;
 }
@@ -220,6 +222,10 @@
     color: rgb(255, 255, 255);
     font-size: 1.5rem;
     text-align: center;
+}
+.section__beneficio-two .image__beneficios h3{
+    font-size: 2rem;
+     font-weight: 400;
 }
  .section__beneficios .bosques {
      background-image: url(../image/pexels-yaroslav-shuraev-1834393.jpg);

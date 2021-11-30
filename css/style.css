@@ -37,20 +37,20 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35vh;
+  padding: 19rem 0 19rem 0;
   margin: auto;
   position: relative;
 }
 
 .section__display {
   color: white;
-  font-weight: 400;
   z-index: 1;
 }
 
 .section__display .display__titulo {
   margin-bottom: 0.5rem;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  font-weight: 500;
   margin: 0 0rem 1rem 0rem;
   text-transform: uppercase;
   animation-duration: 1s;
@@ -68,7 +68,8 @@ svg {
 }
 .section__display .display__parrafo {
   margin-bottom: 2rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 400;
   animation-duration: 2.5s;
   animation-name: aparecer;
   animation-iteration-count: initial;
@@ -83,12 +84,12 @@ svg {
   }
 }
 .display__boton {
-  background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+  background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   border: inherit;
   border-radius: 5px 0;
   cursor: pointer;
@@ -109,7 +110,7 @@ svg {
 .display__boton:hover {
   color: white;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+  background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
 .section-servicios {
@@ -127,14 +128,15 @@ svg {
 }
 
 .servicios-pasos h3 {
-  font-size: 2.3rem;
+  font-size: 2rem;
+  font-weight: 400;
   margin: 1rem;
 }
 
 .titulo-servicios h2 {
-  color: #359e6a;
+  color: #49AB30;
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 800;
   margin: 0.5rem 0 2rem 0;
   text-align: center;
   padding-top: 2rem;
@@ -148,17 +150,17 @@ svg {
 .somos_title h2 {
   padding: 2rem;
   margin: auto;
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-align: center;
-  font-weight: 700;
-  color: #359e6a;
+  font-weight: 500;
+  color: #49AB30;
   border-top: solid 2px black;
 }
 
 .somos__parrafo {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.5rem;
+  font-weight: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -181,12 +183,12 @@ svg {
 }
 
 .boton__somos .display__boton--somos {
-  background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+  background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   border: inherit;
   border-radius: 5px 0;
   cursor: pointer;
@@ -209,17 +211,16 @@ svg {
   margin: auto;
   color: white;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+  background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
 .beneficios__title h2 {
-  background-color: white;
   padding: 2rem 0 2rem 0;
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 3rem;
   text-align: center;
-  font-weight: 700;
-  color: #359e6a;
+  font-weight: 500;
+  color: #49AB30;
   border-top: solid 2px black;
 }
 
@@ -234,8 +235,12 @@ svg {
   align-content: center;
   align-items: center;
   color: white;
-  font-size: 1.5rem;
   text-align: center;
+}
+
+.section__beneficios .image__beneficios h3 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .section__beneficio-two {
@@ -251,6 +256,11 @@ svg {
   color: white;
   font-size: 1.5rem;
   text-align: center;
+}
+
+.section__beneficio-two .image__beneficios h3 {
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .section__beneficios .bosques {
@@ -414,12 +424,12 @@ svg {
 }
 
 .display__boton-nav {
-  background-image: linear-gradient(to right top, #10691b, #11731c, #137e1c, #14881c, #17931c, #1a9d1d, #1da71e, #21b11e, #26bd20, #2bc922, #31d524, #36e126);
+  background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
   text-decoration: none;
   text-transform: uppercase;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   border: inherit;
   border-radius: 5px 0;
   cursor: pointer;
@@ -440,7 +450,7 @@ svg {
 .display__boton-nav:hover {
   color: white;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  background-image: linear-gradient(to right top, #36e126, #31d524, #2bc922, #26bd20, #21b11e, #1da71e, #1a9d1d, #17931c, #14881c, #137e1c, #11731c, #10691b);
+  background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
 footer {
@@ -470,10 +480,12 @@ footer {
 }
 
 .title__servicios h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #49AB30;
   text-align: center;
   padding: 1.5rem 0 1.5rem 0;
+  text-transform: uppercase;
 }
 
 .conteiner__suscripcion a {
@@ -487,7 +499,7 @@ footer {
 
 .suscripcion {
   padding: 2rem 4rem 2rem 4rem;
-  background-image: linear-gradient(to right top, #00a375, #009481, #008386, #007283, #006178);
+  background: #49AB30;
 }
 
 .suscripcion-imagen {
@@ -561,10 +573,10 @@ footer {
 }
 
 .agentes-cambio h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   width: 100%;
-  color: #359e6a;
-  font-weight: 700;
+  color: #49AB30;
+  font-weight: 500;
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
@@ -574,7 +586,7 @@ footer {
 }
 
 .agentes-cambio .text-agentes p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
   font-weight: 100;
@@ -612,15 +624,15 @@ footer {
 }
 
 .somos-agentes .conteiner-somos .text-somos h3 {
-  font-size: 1.5rem;
-  color: #359e6a;
+  font-size: 1.8rem;
+  color: #49AB30;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1rem;
 }
 
 .somos-agentes .conteiner-somos .text-somos p {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
   font-weight: 100;
@@ -641,27 +653,27 @@ footer {
 
 .display__ayuda h2 {
   text-transform: uppercase;
-  color: #359e6a;
-  font-size: 3rem;
-  font-weight: 600;
-  padding: 5rem 0 5rem 0;
+  color: #49AB30;
+  font-size: 3.5rem;
+  font-weight: 500;
+  padding: 4rem 0 4rem 0;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
 
 .display__section {
-  height: 80vh;
+  padding-bottom: 5rem;
 }
 
 .display__section h4 {
-  font-size: 1.2rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: 300;
   margin: 0.5rem 0 0.5rem 0;
 }
 
 .display__section p {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 300;
   margin: 0 1rem 1rem 1rem;
 }
 
@@ -706,14 +718,6 @@ footer {
     font-size: 1.2rem;
   }
 
-  .nav__list {
-    display: block;
-  }
-
-  .nav__link {
-    font-size: 1rem;
-  }
-
   .servicios-pasos {
     width: 100%;
     display: block;
@@ -725,6 +729,12 @@ footer {
 
   .pasos h3 {
     font-size: 1.5rem;
+  }
+
+  .somos__parrafo {
+    font-size: 1.5rem;
+    font-weight: 400;
+    display: block;
   }
 
   .section__beneficios {
@@ -759,7 +769,24 @@ footer {
   }
 
   .agentes-cambio h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .somos-agentes .conteiner-somos .text-somos p {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  .somos-agentes .conteiner-somos .text-somos h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
   }
 
   .agentes-cambio img {
@@ -844,7 +871,7 @@ footer {
 
   .title__servicios h2 {
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 500;
   }
 
   .conteiner__contactos {
@@ -880,12 +907,45 @@ footer {
   }
 
   .somos_title h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .servicios-pasos img {
     width: 150px;
     height: 150px;
+  }
+
+  .section__beneficios .image__beneficios h3 {
+    font-size: 1.5rem;
+  }
+
+  .section__beneficio-two .image__beneficios h3 {
+    font-size: 1.5rem;
+  }
+
+  .display__ayuda h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1rem 0 1rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .display__section {
+    padding-bottom: 3rem;
+  }
+
+  .display__section h4 {
+    font-size: 1.3rem;
+    font-weight: 300;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+
+  .display__section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 1rem 1rem 1rem;
   }
 }
 

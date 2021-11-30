@@ -1,8 +1,10 @@
 .title__servicios h2{
-    font-size: 2.5rem;
-    font-weight: 400;
+    font-size: $big-font;
+    font-weight: $weight-font;
+    color: $color-primario;
     text-align: center;
     padding: 1.5rem 0 1.5rem 0;
+    text-transform: uppercase;
 }
 
 .conteiner__suscripcion a{
@@ -14,7 +16,7 @@
 }
 .suscripcion{
     padding: 2rem 4rem 2rem 4rem;
-    background-image: linear-gradient(to right top, #00a375, #009481, #008386, #007283, #006178);
+    background: $color-primario;
 }
 .suscripcion-imagen{
     text-align: center;
