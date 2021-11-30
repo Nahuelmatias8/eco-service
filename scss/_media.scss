@@ -61,18 +61,20 @@
         font-weight: $weight-font;
         text-align: center;
     }
-    .somos-agentes .conteiner-somos .text-somos p {
-        font-size: 1.3rem;
-        line-height: 1.8rem;
-        color: rgb(0, 0, 0);
-        font-weight: 400;
-        margin-bottom:  2rem;
+    .agentes-cambio .text-agentes p {
+        font-size: 1.5rem;
+        font-weight: 100;
+    
     }
     .somos-agentes .conteiner-somos .text-somos h3 {
         font-size: 1.8rem;
         font-weight: $weight-font;
         margin-bottom: 1rem;
         text-align: center;
+    }
+    .somos-agentes .conteiner-somos .text-somos p {
+        font-size: 1.5rem;
+        font-weight: 100;
     }
     .agentes-cambio img {
         width: 100%;
