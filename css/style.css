@@ -603,7 +603,7 @@ footer {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
@@ -649,7 +649,7 @@ footer {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
-  font-weight: 100;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 
@@ -725,11 +725,19 @@ footer {
   }
 
   .section__display .display__titulo {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+    text-align: center;
   }
 
   .section__display .display__parrafo {
     font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .display__buttom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .servicios-pasos {
@@ -746,9 +754,18 @@ footer {
   }
 
   .somos__parrafo {
-    font-size: 1.5rem;
-    font-weight: 400;
+    font-size: 1.3rem;
+    font-weight: 300;
     display: block;
+    width: 100%;
+  }
+
+  .parrafo--width {
+    padding: 0;
+  }
+
+  .parrafo--width-two {
+    padding: 0;
   }
 
   .section__beneficios {
@@ -789,8 +806,8 @@ footer {
   }
 
   .agentes-cambio .text-agentes p {
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 
   .somos-agentes .conteiner-somos .text-somos h3 {
@@ -801,8 +818,8 @@ footer {
   }
 
   .somos-agentes .conteiner-somos .text-somos p {
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1.3rem;
+    font-weight: 300;
   }
 
   .agentes-cambio img {
@@ -900,21 +917,6 @@ footer {
 
   .display__boton-nav {
     display: none;
-  }
-
-  .somos__parrafo {
-    display: block;
-    font-size: 1rem;
-  }
-
-  .parrafo--width {
-    width: 100%;
-    padding: 1rem 2rem 1rem 2rem;
-  }
-
-  .parrafo--width-two {
-    width: 100%;
-    padding: 1rem 2rem 0rem 2rem;
   }
 
   .boton__somos {
