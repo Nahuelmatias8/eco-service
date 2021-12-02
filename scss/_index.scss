@@ -1,20 +1,16 @@
 .conteiner__display {
-    background-image: url(../image/pexels-mahima-1250260\ \(1\).jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 19rem 0 19rem 0;
-    margin: auto;
-    position: relative;
+  background-image: url(../image/fondoindex.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 19rem 0 19rem 0;
+  margin: auto;
+  position: relative;
 }
-
-.section__display {
-    color: white;
-    z-index: 1;
-    
-}
-
-.section__display .display__titulo {
+.display {
+  color: white;
+  z-index: 1;
+  &__titulo {
     margin-bottom: 0.5rem;
     font-size: $big-font;
     font-weight: $weight-font;
@@ -23,37 +19,32 @@
     animation-duration: 1s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-}
-
-@keyframes aparecer {
+  }
+  @keyframes aparecer {
     0% {
-     opacity: 0;
-   }
+      opacity: 0;
+    }
     100% {
-     opacity: 1;
-   }
-}
-
-.section__display .display__parrafo {
+      opacity: 1;
+    }
+  }
+  &__parrafo {
     margin-bottom: 2rem;
     font-size: 2rem;
     font-weight: 400;
     animation-duration: 2.5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-}
-
-@keyframes aparecer {
+  }
+  @keyframes aparecer {
     0% {
-     opacity: 0;
-   }
+      opacity: 0;
+    }
     100% {
-     opacity: 1;
-   }
-}
-
-
-.display__boton{
+      opacity: 1;
+    }
+  }
+  &__boton {
     background-image: $btn-background;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -67,89 +58,77 @@
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-}
-
-@keyframes aparecer {
+  }
+  @keyframes aparecer {
     0% {
-     opacity: 0;
-   }
+      opacity: 0;
+    }
     100% {
-     opacity: 1;
-   }
-}
-
-
-.display__boton:hover {
+      opacity: 1;
+    }
+  }
+  &__boton:hover {
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
+  }
 }
+/* --------------------------SECCION PASOS------------------------- */
 .section-servicios {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 .servicios-pasos {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    padding: 2rem 0 2rem 0;
-    
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 2rem 0 2rem 0;
 }
 
 .servicios-pasos h3 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin: 1rem;
- }
-
-.titulo-servicios h2 {
-    color: $color-primario;
-    font-size: 2.4rem;
-    font-weight: 800;
-    margin: 0.5rem 0 2rem 0;
-    text-align: center;
-    padding-top: 2rem;
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 1rem;
 }
 .servicios-pasos img {
-     width: 180px;
-     height: 180px;
-
- }
- 
- .somos_title h2{
-     padding: 2rem;
-     margin: auto;
-     font-size: 3rem;
-     text-align: center;
-     font-weight: $weight-font;
-     color: $color-primario;
-     border-top: solid 2px black;
- }
- .somos__parrafo{
-     margin: 0;
-     font-size: 1.5rem;
-     font-weight: 300;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-
- }
- .parrafo--width{
-     padding:0 5rem 0 9rem;
- }
- .parrafo--width-two{
-     padding:0 9rem 0 5rem;
- }
- .boton__somos{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     padding-top: 3.5rem;
-     padding-bottom: 4rem;
- }
- .boton__somos .display__boton--somos{
+  width: 180px;
+  height: 180px;
+}
+/* -------------------------------SECCION QUIENES SOMOS----------------- */
+.conocenos {
+  &__title {
+    padding: 2rem;
+    margin: auto;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: $weight-font;
+    color: $color-primario;
+    border-top: solid 2px black;
+  }
+  &__parrafo {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__parrafo--width {
+    padding: 0 5rem 0 9rem;
+  }
+  &__parrafo--width-two {
+    padding: 0 9rem 0 5rem;
+  }
+  &__boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3.5rem;
+    padding-bottom: 4rem;
+  }
+  &__boton--verde {
     background-image: $btn-background;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -164,209 +143,247 @@
     animation-name: aparecer;
     animation-iteration-count: initial;
     margin: auto;
-}
-
-@keyframes aparecer {
+  }
+  @keyframes aparecer {
     0% {
-     opacity: 0;
-   }
+      opacity: 0;
+    }
     100% {
-     opacity: 1;
-   }
-}
-
-
-.boton__somos .display__boton--somos:hover {
+      opacity: 1;
+    }
+  }
+  &__boton--verde:hover {
     margin: auto;
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
+  }
 }
-.beneficios__title h2{
-    padding: 2rem 0 2rem 0;
-    margin: 0;
-     font-size: 3rem;
-     text-align: center;
-     font-weight: $weight-font;
-     color: $color-primario;
-     border-top: solid 2px black;
-     
- }
+/* ---------------------------------SECCION POR QUE RECICLAR------------- */
+.beneficios__title h2 {
+  padding: 2rem 0 2rem 0;
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: $weight-font;
+  color: $color-primario;
+  border-top: solid 2px black;
+}
 
- .section__beneficios {
-     display: flex;
- }
+.section__beneficios {
+  display: flex;
+}
 
- .section__beneficios .image__beneficios {
-     width: 100%;
-     height: 300px;
-     display: flex;
-     align-content: center;
-     align-items: center;
-     color: rgb(255, 255, 255);
-    text-align: center;
- }
- .section__beneficios .image__beneficios h3{
-     font-size: 2rem;
-     font-weight: 400;
- }
+.section__beneficios .image__beneficios {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.section__beneficios .image__beneficios h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
 .section__beneficio-two {
-    display: flex;
+  display: flex;
 }
-.section__beneficio-two .image__beneficios { 
-    width: 100%;
-    height: 300px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    color: rgb(255, 255, 255);
-    font-size: 1.5rem;
-    text-align: center;
+.section__beneficio-two .image__beneficios {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  text-align: center;
 }
-.section__beneficio-two .image__beneficios h3{
-    font-size: 2rem;
-     font-weight: 400;
+.section__beneficio-two .image__beneficios h3 {
+  font-size: 2rem;
+  font-weight: 400;
 }
- .section__beneficios .bosques {
-     background-image: url(../image/pexels-yaroslav-shuraev-1834393.jpg);
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     position: relative;
-     z-index: -2;
- }
- .bosques:before {
-     z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+.section__beneficios .bosques {
+  background-image: url(../image/pexels-yaroslav-shuraev-1834393.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
+}
+.bosques:before {
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .section__beneficios .oceanos {
-    background-image: url(../image/oceano.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: -2
+  background-image: url(../image/oceano.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -2;
 }
 .oceanos:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .section__beneficios .energia {
-    background-color: rgb(236, 236, 15);
-    position: relative;
-    z-index: -2;
+  background-color: rgb(236, 236, 15);
+  position: relative;
+  z-index: -2;
 }
 .energia:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 .section__beneficios .residuos {
-    z-index: -2;
-    background-image: url(../image/contaminacion.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  z-index: -2;
+  background-image: url(../image/contaminacion.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .residuos:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .section__beneficio-two .emiciones {
-    z-index: -2;
-    background-image: url(../image/oso\ polar.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  z-index: -2;
+  background-image: url(../image/oso\ polar.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .emiciones:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .section__beneficio-two .petroleo {
-    z-index: -2;
-    background-image: url(../image/petroleo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  z-index: -2;
+  background-image: url(../image/petroleo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .petroleo:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 .section__beneficio-two .dinero {
-    z-index: -2;
-    background-color: rgb(70, 180, 125);
-    position: relative;
+  z-index: -2;
+  background-color: rgb(70, 180, 125);
+  position: relative;
 }
 .dinero:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }
 
 .section__beneficio-two .planeta {
-    z-index: -2;
-    background-image: url(../image/planeta2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  z-index: -2;
+  background-image: url(../image/planeta2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .planeta:before {
-    z-index: -1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: linear-gradient(190deg,rgba(0,0,0,.7),rgba(0,0,0,.5),rgba(0,0,0,.2));
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    190deg,
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.2)
+  );
 }

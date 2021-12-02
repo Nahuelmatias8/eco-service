@@ -33,7 +33,7 @@ svg {
 }
 
 .conteiner__display {
-  background-image: url(../image/pexels-mahima-1250260\ \(1\).jpg);
+  background-image: url(../image/fondoindex.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,12 +42,11 @@ svg {
   position: relative;
 }
 
-.section__display {
+.display {
   color: white;
   z-index: 1;
 }
-
-.section__display .display__titulo {
+.display__titulo {
   margin-bottom: 0.5rem;
   font-size: 3.5rem;
   font-weight: 500;
@@ -57,7 +56,6 @@ svg {
   animation-name: aparecer;
   animation-iteration-count: initial;
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -66,7 +64,7 @@ svg {
     opacity: 1;
   }
 }
-.section__display .display__parrafo {
+.display__parrafo {
   margin-bottom: 2rem;
   font-size: 2rem;
   font-weight: 400;
@@ -74,7 +72,6 @@ svg {
   animation-name: aparecer;
   animation-iteration-count: initial;
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -98,7 +95,6 @@ svg {
   animation-name: aparecer;
   animation-iteration-count: initial;
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -113,6 +109,7 @@ svg {
   background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
+/* --------------------------SECCION PASOS------------------------- */
 .section-servicios {
   background-color: white;
 }
@@ -133,31 +130,22 @@ svg {
   margin: 1rem;
 }
 
-.titulo-servicios h2 {
-  color: #49AB30;
-  font-size: 2.4rem;
-  font-weight: 800;
-  margin: 0.5rem 0 2rem 0;
-  text-align: center;
-  padding-top: 2rem;
-}
-
 .servicios-pasos img {
   width: 180px;
   height: 180px;
 }
 
-.somos_title h2 {
+/* -------------------------------SECCION QUIENES SOMOS----------------- */
+.conocenos__title {
   padding: 2rem;
   margin: auto;
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
-  color: #49AB30;
+  color: #49ab30;
   border-top: solid 2px black;
 }
-
-.somos__parrafo {
+.conocenos__parrafo {
   margin: 0;
   font-size: 1.5rem;
   font-weight: 300;
@@ -165,24 +153,20 @@ svg {
   justify-content: center;
   align-items: center;
 }
-
-.parrafo--width {
+.conocenos__parrafo--width {
   padding: 0 5rem 0 9rem;
 }
-
-.parrafo--width-two {
+.conocenos__parrafo--width-two {
   padding: 0 9rem 0 5rem;
 }
-
-.boton__somos {
+.conocenos__boton {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 3.5rem;
   padding-bottom: 4rem;
 }
-
-.boton__somos .display__boton--somos {
+.conocenos__boton--verde {
   background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
   text-decoration: none;
@@ -198,7 +182,6 @@ svg {
   animation-iteration-count: initial;
   margin: auto;
 }
-
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -207,20 +190,21 @@ svg {
     opacity: 1;
   }
 }
-.boton__somos .display__boton--somos:hover {
+.conocenos__boton--verde:hover {
   margin: auto;
   color: white;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
   background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
 }
 
+/* ---------------------------------SECCION POR QUE RECICLAR------------- */
 .beneficios__title h2 {
   padding: 2rem 0 2rem 0;
   margin: 0;
   font-size: 3rem;
   text-align: center;
   font-weight: 500;
-  color: #49AB30;
+  color: #49ab30;
   border-top: solid 2px black;
 }
 
@@ -417,12 +401,6 @@ svg {
   background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
 }
 
-.conteiner-nav {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1600px;
-}
-
 .display__boton-nav {
   background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
@@ -454,7 +432,7 @@ svg {
 }
 
 .button-nav:focus {
-  color: #49AB30;
+  color: #49ab30;
 }
 
 .nav-link {
@@ -464,7 +442,7 @@ svg {
 
 .nav-link:hover {
   text-decoration: underline;
-  color: #49AB30;
+  color: #49ab30;
 }
 
 footer {
@@ -496,7 +474,7 @@ footer {
 .title__servicios h2 {
   font-size: 3.5rem;
   font-weight: 500;
-  color: #49AB30;
+  color: #49ab30;
   text-align: center;
   padding: 1.5rem 0 1.5rem 0;
   text-transform: uppercase;
@@ -513,7 +491,7 @@ footer {
 
 .suscripcion {
   padding: 2rem 4rem 2rem 4rem;
-  background: #49AB30;
+  background: #49ab30;
 }
 
 .suscripcion-imagen {
@@ -589,7 +567,7 @@ footer {
 .agentes-cambio h2 {
   font-size: 2.2rem;
   width: 100%;
-  color: #49AB30;
+  color: #49ab30;
   font-weight: 500;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -639,7 +617,7 @@ footer {
 
 .somos-agentes .conteiner-somos .text-somos h3 {
   font-size: 1.8rem;
-  color: #49AB30;
+  color: #49ab30;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -667,7 +645,7 @@ footer {
 
 .display__ayuda h2 {
   text-transform: uppercase;
-  color: #49AB30;
+  color: #49ab30;
   font-size: 3.5rem;
   font-weight: 500;
   padding: 4rem 0 4rem 0;
@@ -719,17 +697,17 @@ footer {
   }
 
   .conteiner__display {
-    padding: 10rem 0 10rem 0;
+    padding: 7rem 0 7rem 0;
     margin: auto;
     background-position: right;
   }
 
-  .section__display .display__titulo {
-    font-size: 1.8rem;
+  .display .display__titulo {
+    font-size: 1.5rem;
     text-align: center;
   }
 
-  .section__display .display__parrafo {
+  .display .display__parrafo {
     font-size: 1.2rem;
     text-align: center;
   }
@@ -745,26 +723,22 @@ footer {
     display: block;
   }
 
-  .titulo-servicios h2 {
-    font-size: 1.8rem;
-  }
-
   .pasos h3 {
     font-size: 1.5rem;
   }
 
-  .somos__parrafo {
+  .conocenos__parrafo {
     font-size: 1.3rem;
     font-weight: 300;
     display: block;
     width: 100%;
   }
 
-  .parrafo--width {
+  .conocenos__parrafo--width {
     padding: 0;
   }
 
-  .parrafo--width-two {
+  .conocenos__parrafo--width-two {
     padding: 0;
   }
 
