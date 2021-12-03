@@ -1,4 +1,4 @@
-.conteiner__display {
+.display {
   background-image: url(../image/fondoindex.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -6,10 +6,10 @@
   padding: 19rem 0 19rem 0;
   margin: auto;
   position: relative;
-}
-.display {
+  &__section {
   color: white;
   z-index: 1;
+  }
   &__titulo {
     margin-bottom: 0.5rem;
     font-size: $big-font;
@@ -74,10 +74,7 @@
   }
 }
 /* --------------------------SECCION PASOS------------------------- */
-.section-servicios {
-  background-color: rgb(255, 255, 255);
-}
-.servicios-pasos {
+.pasos {
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -85,16 +82,15 @@
   align-content: center;
   text-align: center;
   padding: 2rem 0 2rem 0;
-}
-
-.servicios-pasos h3 {
-  font-size: 2rem;
-  font-weight: 400;
-  margin: 1rem;
-}
-.servicios-pasos img {
-  width: 180px;
-  height: 180px;
+  &__image {
+    width: 180px;
+    height: 180px;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 1rem;
+  }
 }
 /* -------------------------------SECCION QUIENES SOMOS----------------- */
 .conocenos {
@@ -160,7 +156,7 @@
   }
 }
 /* ---------------------------------SECCION POR QUE RECICLAR------------- */
-.beneficios__title h2 {
+.beneficios__title {
   padding: 2rem 0 2rem 0;
   margin: 0;
   font-size: 3rem;

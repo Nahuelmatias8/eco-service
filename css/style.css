@@ -32,7 +32,7 @@ svg {
   width: 100%;
 }
 
-.conteiner__display {
+.display {
   background-image: url(../image/fondoindex.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -41,8 +41,7 @@ svg {
   margin: auto;
   position: relative;
 }
-
-.display {
+.display__section {
   color: white;
   z-index: 1;
 }
@@ -110,11 +109,7 @@ svg {
 }
 
 /* --------------------------SECCION PASOS------------------------- */
-.section-servicios {
-  background-color: white;
-}
-
-.servicios-pasos {
+.pasos {
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -123,16 +118,14 @@ svg {
   text-align: center;
   padding: 2rem 0 2rem 0;
 }
-
-.servicios-pasos h3 {
+.pasos__image {
+  width: 180px;
+  height: 180px;
+}
+.pasos__title {
   font-size: 2rem;
   font-weight: 400;
   margin: 1rem;
-}
-
-.servicios-pasos img {
-  width: 180px;
-  height: 180px;
 }
 
 /* -------------------------------SECCION QUIENES SOMOS----------------- */
@@ -198,7 +191,7 @@ svg {
 }
 
 /* ---------------------------------SECCION POR QUE RECICLAR------------- */
-.beneficios__title h2 {
+.beneficios__title {
   padding: 2rem 0 2rem 0;
   margin: 0;
   font-size: 3rem;
@@ -555,7 +548,7 @@ footer {
   font-size: 50px;
 }
 
-.agentes-cambio {
+.agentes {
   padding: 60px 45px;
   width: 100%;
   display: flex;
@@ -563,8 +556,7 @@ footer {
   justify-content: space-between;
   align-items: center;
 }
-
-.agentes-cambio h2 {
+.agentes__title {
   font-size: 2.2rem;
   width: 100%;
   color: #49ab30;
@@ -572,75 +564,63 @@ footer {
   margin-bottom: 2rem;
   text-transform: uppercase;
 }
-
-.agentes-cambio .text-agentes {
+.agentes__text {
   width: 52%;
 }
-
-.agentes-cambio .text-agentes p {
+.agentes__parrafo {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
   font-weight: 300;
   margin-bottom: 2rem;
 }
-
-.agentes-cambio img {
+.agentes__image {
   width: 32%;
   opacity: 95%;
 }
 
-.somos-agentes {
+.somos {
   padding: 0px 45px 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.somos-agentes img {
+.somos__image {
   width: 100%;
   opacity: 95%;
 }
-
-.somos-agentes .imagen-flores {
+.somos__image--none {
   display: none;
 }
-
-.somos-agentes .conteiner-somos {
+.somos__section {
   width: 50%;
 }
-
-.somos-agentes .conteiner-somos .text-somos {
+.somos__text {
   margin-top: 70px;
 }
-
-.somos-agentes .conteiner-somos .text-somos h3 {
+.somos__text:nth-child(1) {
+  margin-left: 20px;
+}
+.somos__text:nth-child(2) {
+  margin-left: 80px;
+}
+.somos__text:nth-child(3) {
+  margin-left: 40px;
+}
+.somos__title {
   font-size: 1.8rem;
   color: #49ab30;
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 1rem;
 }
-
-.somos-agentes .conteiner-somos .text-somos p {
+.somos__parrafo {
   font-size: 1.5rem;
   line-height: 1.8rem;
   color: black;
   font-weight: 300;
   margin-bottom: 2rem;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(1) {
-  margin-left: 20px;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(2) {
-  margin-left: 80px;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(3) {
-  margin-left: 40px;
 }
 
 .display__ayuda h2 {
@@ -696,52 +676,50 @@ footer {
     width: 95%;
   }
 
-  .conteiner__display {
+  /* -----------------------------------------INDEX---------------------------- */
+  .display {
     padding: 7rem 0 7rem 0;
     margin: auto;
     background-position: right;
   }
-
-  .display .display__titulo {
+  .display__titulo {
     font-size: 1.5rem;
     text-align: center;
   }
-
-  .display .display__parrafo {
+  .display__parrafo {
     font-size: 1.2rem;
     text-align: center;
   }
-
   .display__buttom {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .servicios-pasos {
+  /* ----------------------------------INDEX SECCION PASOS------------------- */
+  .pasos {
     width: 100%;
     display: block;
   }
-
-  .pasos h3 {
+  .pasos__title {
     font-size: 1.5rem;
   }
 
+  /* ---------------------------------INDEX QUIENES SOMOS------------------ */
   .conocenos__parrafo {
     font-size: 1.3rem;
     font-weight: 300;
     display: block;
     width: 100%;
   }
-
   .conocenos__parrafo--width {
     padding: 0;
   }
-
   .conocenos__parrafo--width-two {
     padding: 0;
   }
 
+  /* ----------------------------INDEX POR QUE RECICLAR----------------- */
   .section__beneficios {
     display: block;
   }
@@ -762,74 +740,67 @@ footer {
     font-size: 1.5rem;
   }
 
-  .agentes-cambio {
+  /* -------------------------------NOSOTROS----------------------------- */
+  .agentes {
     display: block;
     padding: 1rem 0 0 0;
   }
-
-  .somos-agentes {
-    padding: 0;
-    display: block;
-    width: 100%;
-  }
-
-  .agentes-cambio h2 {
+  .agentes__title {
     font-size: 1.8rem;
     font-weight: 500;
     text-align: center;
   }
-
-  .agentes-cambio .text-agentes p {
+  .agentes__text {
+    padding: 0;
+    display: block;
+    width: 100%;
+  }
+  .agentes__parrafo {
     font-size: 1.3rem;
     font-weight: 300;
   }
+  .agentes__image {
+    width: 100%;
+  }
 
-  .somos-agentes .conteiner-somos .text-somos h3 {
+  .somos {
+    padding: 0;
+  }
+  .somos__text {
+    width: 100%;
+  }
+  .somos__title {
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 1rem;
     text-align: center;
   }
-
-  .somos-agentes .conteiner-somos .text-somos p {
+  .somos__parrafo {
     font-size: 1.3rem;
     font-weight: 300;
   }
-
-  .agentes-cambio img {
-    width: 100%;
-  }
-
-  .somos-agentes img {
+  .somos__image {
     display: none;
     padding-bottom: 1rem;
   }
-
-  .somos-agentes .imagen-flores {
+  .somos__image--none {
     display: block;
     width: 100%;
   }
-
-  .agentes-cambio .text-agentes {
+  .somos__section {
     width: 100%;
   }
-
-  .somos-agentes .conteiner-somos {
-    width: 100%;
+  .somos__text:nth-child(1) {
+    margin-left: 0;
   }
-
-  .somos-agentes .conteiner-somos .text-somos:nth-child(1) {
+  .somos__text:nth-child(2) {
+    margin-left: 0;
+  }
+  .somos__text:nth-child(3) {
     margin-left: 0;
   }
 
-  .somos-agentes .conteiner-somos .text-somos:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .somos-agentes .conteiner-somos .text-somos:nth-child(3) {
-    margin-left: 0;
-  }
-
+  /* -----------------------FOOTER------------------------------- */
   footer {
     background-image: linear-gradient(to bottom, #727272, #323034);
   }
@@ -848,6 +819,7 @@ footer {
     font-weight: 100;
   }
 
+  /* -----------------------------------SERVICIOS-------------------------- */
   .conteiner__pagos {
     display: block;
   }
@@ -881,6 +853,7 @@ footer {
     font-weight: 500;
   }
 
+  /* -----------------------------------CONTACTOS----------------------- */
   .conteiner__contactos {
     background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
     background-position: top;

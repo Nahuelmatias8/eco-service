@@ -2,43 +2,49 @@
   .conteiner {
     width: 95%;
   }
-  .conteiner__display {
+  /* -----------------------------------------INDEX---------------------------- */
+  .display {
     padding: 7rem 0 7rem 0;
     margin: auto;
     background-position: right;
+    &__titulo {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    &__parrafo {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    &__buttom {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-  .display .display__titulo {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-  .display .display__parrafo {
-    font-size: 1.2rem;
-    text-align: center;
-  }
-  .display__buttom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .servicios-pasos {
+  /* ----------------------------------INDEX SECCION PASOS------------------- */
+  .pasos {
     width: 100%;
     display: block;
+    &__title{
+      font-size: 1.5rem;
+    }
   }
-  .pasos h3 {
-    font-size: 1.5rem;
+  /* ---------------------------------INDEX QUIENES SOMOS------------------ */
+  .conocenos{
+    &__parrafo {
+      font-size: 1.3rem;
+      font-weight: 300;
+      display: block;
+      width: 100%;
+    }
+    &__parrafo--width {
+      padding: 0;
+    }
+    &__parrafo--width-two {
+      padding: 0;
+    }
   }
-  .conocenos__parrafo {
-    font-size: 1.3rem;
-    font-weight: 300;
-    display: block;
-    width: 100%;
-  }
-  .conocenos__parrafo--width {
-    padding: 0;
-  }
-  .conocenos__parrafo--width-two {
-    padding: 0;
-  }
+  /* ----------------------------INDEX POR QUE RECICLAR----------------- */
   .section__beneficios {
     display: block;
   }
@@ -55,65 +61,70 @@
   .section__beneficio-two h3 {
     font-size: 1.5rem;
   }
-
-  .agentes-cambio {
+/* -------------------------------NOSOTROS----------------------------- */
+  .agentes{
     display: block;
     padding: 1rem 0 0 0;
+    &__title{
+      font-size: 1.8rem;
+      font-weight: $weight-font;
+      text-align: center;
+    }
+    &__text{
+      padding: 0;
+      display: block;
+      width: 100%;
+    }
+    &__parrafo{
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+    &__image {
+      width: 100%;
+    }
   }
-  .somos-agentes {
+  .somos {
     padding: 0;
-    display: block;
-    width: 100%;
-  }
-  .agentes-cambio h2 {
-    font-size: 1.8rem;
-    font-weight: $weight-font;
-    text-align: center;
-  }
-  .agentes-cambio .text-agentes p {
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-  .somos-agentes .conteiner-somos .text-somos h3 {
-    font-size: 1.8rem;
-    font-weight: $weight-font;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .somos-agentes .conteiner-somos .text-somos p {
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-  .agentes-cambio img {
-    width: 100%;
-  }
-  .somos-agentes img {
-    display: none;
-    padding-bottom: 1rem;
-  }
+    &__text{
+      width: 100%;
+    }
+    &__title{
+      font-size: 1.8rem;
+      font-weight: $weight-font;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    &__parrafo{
+      font-size: 1.3rem;
+      font-weight: 300;
+    }
+    &__image{
+      display: none;
+      padding-bottom: 1rem;
+    }
+  
+    &__image--none{
+      display: block;
+      width: 100%;
+    }
+  
+    &__section{
+      width: 100%;
+    }
+    &__text:nth-child(1) {
+      margin-left: 0;
+    }
+  
+    &__text:nth-child(2) {
+      margin-left: 0;
+    }
+  
+    &__text:nth-child(3) {
+      margin-left: 0;
+    }
 
-  .somos-agentes .imagen-flores {
-    display: block;
-    width: 100%;
   }
-
-  .agentes-cambio .text-agentes {
-    width: 100%;
-  }
-  .somos-agentes .conteiner-somos {
-    width: 100%;
-  }
-  .somos-agentes .conteiner-somos .text-somos:nth-child(1) {
-    margin-left: 0;
-  }
-
-  .somos-agentes .conteiner-somos .text-somos:nth-child(2) {
-    margin-left: 0;
-  }
-
-  .somos-agentes .conteiner-somos .text-somos:nth-child(3) {
-    margin-left: 0;
-  }
+  /* -----------------------FOOTER------------------------------- */
 
   footer {
     background-image: linear-gradient(
@@ -134,7 +145,7 @@
     font-size: 0.8rem;
     font-weight: 100;
   }
-
+/* -----------------------------------SERVICIOS-------------------------- */
   .conteiner__pagos {
     display: block;
   }
@@ -161,6 +172,7 @@
     font-size: 2rem;
     font-weight: $weight-font;
   }
+  /* -----------------------------------CONTACTOS----------------------- */
   .conteiner__contactos {
     background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
     background-position: top;

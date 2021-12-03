@@ -1,87 +1,74 @@
-.agentes-cambio {
+.agentes {
   padding: 60px 45px;
   width: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  &__title {
+    font-size: 2.2rem;
+    width: 100%;
+    color: $color-primario;
+    font-weight: $weight-font;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  &__text {
+    width: 52%;
+  }
+  &__parrafo {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
+  &__image {
+    width: 32%;
+    opacity: 95%;
+  }
 }
 
-.agentes-cambio h2 {
-  font-size: 2.2rem;
-  width: 100%;
-  color: $color-primario;
-  font-weight: $weight-font;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
-.agentes-cambio .text-agentes {
-  width: 52%;
-}
-
-.agentes-cambio .text-agentes p {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  margin-bottom: 2rem;
-}
-
-.agentes-cambio img {
-  width: 32%;
-  opacity: 95%;
-}
-
-.somos-agentes {
+.somos {
   padding: 0px 45px 80px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.somos-agentes img {
-  width: 100%;
-  opacity: 95%;
-}
-
-.somos-agentes .imagen-flores {
-  display: none;
-}
-
-.somos-agentes .conteiner-somos {
-  width: 50%;
-}
-
-.somos-agentes .conteiner-somos .text-somos {
-  margin-top: 70px;
-}
-
-.somos-agentes .conteiner-somos .text-somos h3 {
-  font-size: 1.8rem;
-  color: $color-primario;
-  text-transform: uppercase;
-  font-weight: $weight-font;
-  margin-bottom: 1rem;
-}
-
-.somos-agentes .conteiner-somos .text-somos p {
-  font-size: 1.5rem;
-  line-height: 1.8rem;
-  color: rgb(0, 0, 0);
-  font-weight: 300;
-  margin-bottom: 2rem;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(1) {
-  margin-left: 20px;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(2) {
-  margin-left: 80px;
-}
-
-.somos-agentes .conteiner-somos .text-somos:nth-child(3) {
-  margin-left: 40px;
+  &__image {
+    width: 100%;
+    opacity: 95%;
+  }
+  &__image--none {
+    display: none;
+  }
+  &__section {
+    width: 50%;
+  }
+  &__text {
+    margin-top: 70px;
+  }
+  &__text:nth-child(1) {
+    margin-left: 20px;
+  }
+  &__text:nth-child(2) {
+    margin-left: 80px;
+  }
+  &__text:nth-child(3) {
+    margin-left: 40px;
+  }
+  &__title {
+    font-size: 1.8rem;
+    color: $color-primario;
+    text-transform: uppercase;
+    font-weight: $weight-font;
+    margin-bottom: 1rem;
+  }
+  &__parrafo {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    margin-bottom: 2rem;
+  }
 }
