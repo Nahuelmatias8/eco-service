@@ -4,23 +4,23 @@
     color: $color-primario;
     font-size: $big-font;
     font-weight: $weight-font;
-    padding: 4rem 0 4rem 0;
+    padding: 3rem 0 3rem 0;
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
   }
   &__section {
     padding-bottom: 5rem;
   }
-  &__subtitle{
+  &__subtitle {
     font-size: 1.8rem;
     font-weight: 300;
     margin: 0.5rem 0 0.5rem 0;
   }
-  
-  &__parrafo{
+
+  &__parrafo {
     font-size: 1.4rem;
     font-weight: 300;
     margin: 0 1rem 1rem 1rem;
   }
-
 }

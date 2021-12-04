@@ -5,7 +5,6 @@
   background-size: cover;
   padding: 19rem 0 19rem 0;
   margin: auto;
-  position: relative;
   &__section {
     color: white;
     z-index: 1;
@@ -71,6 +70,7 @@
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
+    border-radius: 0 5px;
   }
 }
 /* --------------------------SECCION PASOS------------------------- */
@@ -153,6 +153,7 @@
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
+    border-radius: 0 5px;
   }
 }
 /* ---------------------------------SECCION POR QUE RECICLAR------------- */

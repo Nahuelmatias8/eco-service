@@ -25,12 +25,12 @@
   .pasos {
     width: 100%;
     display: block;
-    &__title{
+    &__title {
       font-size: 1.3rem;
     }
   }
   /* ---------------------------------INDEX QUIENES SOMOS------------------ */
-  .conocenos{
+  .conocenos {
     &__title {
       font-size: 2rem;
     }
@@ -50,28 +50,31 @@
   /* ----------------------------INDEX POR QUE RECICLAR----------------- */
   .beneficios {
     display: block;
-    &__title{
+    &__title {
       font-size: 1.3rem;
     }
   }
-  .reciclar__title{
-  font-size: 2rem;
-}
-/* -------------------------------NOSOTROS----------------------------- */
-  .agentes{
+  .reciclar__title {
+    font-size: 2rem;
+  }
+  /* -------------------------------NOSOTROS----------------------------- */
+  .agentes {
     display: block;
     padding: 1rem 0 0 0;
-    &__title{
-      font-size: 1.8rem;
+    &__title {
+      font-size: $media-font;
       font-weight: $weight-font;
       text-align: center;
+      padding: 3rem 0 3rem 0;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
     }
-    &__text{
+    &__text {
       padding: 0;
       display: block;
       width: 100%;
     }
-    &__parrafo{
+    &__parrafo {
       font-size: 1.3rem;
       font-weight: 300;
     }
@@ -81,44 +84,43 @@
   }
   .somos {
     padding: 0;
-    &__text{
+    &__text {
       width: 100%;
     }
-    &__title{
+    &__title {
       font-size: 1.8rem;
       font-weight: $weight-font;
       margin-bottom: 1rem;
       text-align: center;
     }
-    &__parrafo{
+    &__parrafo {
       font-size: 1.3rem;
       font-weight: 300;
     }
-    &__image{
+    &__image {
       display: none;
       padding-bottom: 1rem;
     }
-  
-    &__image--none{
+
+    &__image--none {
       display: block;
       width: 100%;
     }
-  
-    &__section{
+
+    &__section {
       width: 100%;
     }
     &__text:nth-child(1) {
       margin-left: 0;
     }
-  
+
     &__text:nth-child(2) {
       margin-left: 0;
     }
-  
+
     &__text:nth-child(3) {
       margin-left: 0;
     }
-
   }
   /* -----------------------FOOTER------------------------------- */
 
@@ -141,7 +143,7 @@
     font-size: 0.8rem;
     font-weight: 100;
   }
-/* -----------------------------------SERVICIOS-------------------------- */
+  /* -----------------------------------SERVICIOS-------------------------- */
   .conteiner__pagos {
     display: block;
   }
@@ -164,45 +166,47 @@
     margin-bottom: 2rem;
     padding: 0.5rem;
   }
-  .title__servicios h2 {
-    font-size: 2rem;
+  .servicios__title {
+    font-size: $media-font;
     font-weight: $weight-font;
   }
   /* -----------------------------------CONTACTOS----------------------- */
-  .conteiner__contactos {
-    background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 2rem;
-  }
+
   .display__boton-nav {
     display: none;
   }
+  .contactos__title {
+    font-size: $media-font;
+  }
+  .comunicate__icon {
+    color:$color-primario;
+  }
+  .comunicate__title {
+    font-size: 1.3rem;
+  }
+  .comunicate__chat-title{
+    font-size: 1.2rem;
+  }
   /* ----------------------------------AYUDA--------------------------- */
   .ayuda {
-    &__title{
-      font-size: 1.8rem;
+    &__title {
+      font-size: $media-font;
       font-weight: $weight-font;
-      padding: 1rem 0 1rem 0;
-      margin-top: 0.5rem;
-      margin-bottom: 1rem;
       text-align: center;
     }
     &__section {
       padding-bottom: 3rem;
     }
-    &__subtitle{
+    &__subtitle {
       font-size: 1.3rem;
       font-weight: 300;
       margin: 0.5rem 0 0.5rem 0;
     }
-  
-    &__parrafo{
+
+    &__parrafo {
       font-size: 1.2rem;
       font-weight: 300;
       margin: 0 1rem 1rem 1rem;
     }
-
   }
 }

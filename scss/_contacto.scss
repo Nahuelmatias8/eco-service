@@ -1,21 +1,63 @@
-.conteiner__contactos {
-  background-image: url(../image/pexels-julian-paolo-dayag-1673973.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 15rem;
-}
-
-.section-contactos {
+.contactos__title {
+  font-size: $big-font;
+  color: $color-primario;
+  font-weight: $weight-font;
   text-align: center;
-  display: flex;
+  padding: 3rem 0 3rem 0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
-
-.section-disponibilidad h3 {
+.btn {
+  background-image: $btn-background;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+  font-weight: $weight-font;
+  border: inherit;
+  border-radius: 5px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  color: white;
+  padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+  background-image: $btn-background-hover;
+  border-radius: 0 5px;
+}
+.form {
+  padding-bottom: 2rem;
+}
+.form__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.comunicate__title {
   font-size: 1.5rem;
   font-weight: 400;
+  text-align: center;
 }
-
-.icono-contacto {
+.comunicate__section-icon {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.link-tel {
+  text-decoration: none;
+}
+.link-chat {
+  text-decoration: none;
+}
+.comunicate__icon {
+  color: black;
+}
+.comunicate__icon:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.3s;
+  color: $color-primario;
 }

@@ -10,25 +10,12 @@
     border-radius: 5px 0;
     cursor: pointer;
     transition: all 0.2s;
-    animation-duration: 2s;
-    animation-name: aparecer;
-    animation-iteration-count: initial;
 }
-
-@keyframes aparecer {
-    0% {
-     opacity: 0;
-   }
-    100% {
-     opacity: 1;
-   }
-}
-
-
 .display__boton-nav:hover {
     color: white;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
     background-image: $btn-background-hover;
+    border-radius: 0 5px;
 }
 
 .button-nav:focus{

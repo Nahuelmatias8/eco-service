@@ -29,7 +29,7 @@
   </head>
   <body>
     <!-- -------------------------------------------HEADER------------------------------------ -->
-    <header>
+    <header class="shadow bg-body rounded">
       <div class="conteiner">
         <div class="row">
           <nav class="navbar navbar-expand-lg">
@@ -85,21 +85,19 @@
     <!-- -----------------------------------------------MAIN------------------------------------- -->
     <main>
       <div>
-        <div class="conteiner__contactos">
+        <div class="contactos">
           <div class="conteiner">
             <div class="row">
-              <div class="col">
-                <form
-                  class="justify-content-center g-3 needs-validation"
-                  novalidate=""
-                >
+              <div class="contactos__section">
+                <h2 class="contactos__title">Contactanos</h2>
+              </div>
+              <div class="form">
+                <form class="form__section" novalidate="">
                   <div class="col-md-4">
-                    <label for="validationCustom01" class="form-label"
-                      >Nombre</label
-                    >
                     <input
                       type="text"
-                      class="form-control"
+                      placeholder="Nombre"
+                      class="form-control shadow p-2 mb-4 bg-body rounded"
                       id="validationCustom01"
                       value=""
                       required=""
@@ -107,12 +105,10 @@
                     <div class="valid-feedback">Looks good!</div>
                   </div>
                   <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label"
-                      >Apellido</label
-                    >
                     <input
                       type="text"
-                      class="form-control"
+                      placeholder="Apellido"
+                      class="form-control shadow p-2 mb-4 bg-body rounded"
                       id="validationCustom02"
                       value=""
                       required=""
@@ -120,16 +116,11 @@
                     <div class="valid-feedback">Looks good!</div>
                   </div>
                   <div class="col-md-4">
-                    <label for="validationCustomUsername" class="form-label"
-                      >Email</label
-                    >
                     <div class="input-group has-validation">
-                      <span class="input-group-text" id="inputGroupPrepend"
-                        >@</span
-                      >
                       <input
                         type="text"
-                        class="form-control"
+                        placeholder="Email"
+                        class="form-control shadow p-2 mb-4 bg-body rounded"
                         id="validationCustomUsername"
                         aria-describedby="inputGroupPrepend"
                         required=""
@@ -140,12 +131,10 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <label for="validationCustom03" class="form-label"
-                      >Ciudad</label
-                    >
                     <input
                       type="text"
-                      class="form-control"
+                      placeholder="Ciudad"
+                      class="form-control shadow p-2 mb-4 bg-body rounded"
                       id="validationCustom03"
                       required=""
                     />
@@ -154,12 +143,10 @@
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <label for="validationCustom02" class="form-label"
-                      >Telefono</label
-                    >
                     <input
                       type="tel"
-                      class="form-control"
+                      placeholder="Telefono"
+                      class="form-control shadow p-2 mb-4 bg-body rounded"
                       id="validationCustom02"
                       value=""
                       required=""
@@ -167,65 +154,49 @@
                     <div class="valid-feedback">Looks good!</div>
                   </div>
                   <div class="col-md-4">
-                    <label for="validationCustom05" class="form-label"
-                      >CP
-                    </label>
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="validationCustom05"
-                      required=""
-                    />
                     <div class="invalid-feedback">
                       Please provide a valid zip.
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="form-check">
-                      <input
-                        class="form-check-input"
-                        type="checkbox"
-                        value=""
-                        id="invalidCheck"
-                        required=""
-                      />
-                      <label class="form-check-label" for="invalidCheck">
-                        Agree to terms and conditions
-                      </label>
-                      <div class="invalid-feedback">
-                        You must agree before submitting.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">
-                      Enviar
-                    </button>
+                    <button class="btn" type="submit">Enviar</button>
                   </div>
                 </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="section-contactos">
+        <div class="comunicate">
           <div class="conteiner">
             <div class="row">
               <div class="col">
-                <div class="section-disponibilidad">
-                  <h3>Estamos displonible las 24 horas, todos los dias.</h3>
-                  <div>
-                    <a class="link-chat" href="">
-                      <div>
-                        <i class="fas fa-comments"></i>
-                      </div>
-                      <h2>Chat en vivo</h2>
-                    </a>
-                    <a class="link-tel" href="">
-                      <div>
-                        <i class="fas fa-mobile-alt"></i>
-                      </div>
-                      <h2>Llamanos</h2>
-                    </a>
+                <div class="comunicate__section">
+                  <h3 class="comunicate__title">
+                    Estamos displonible las 24 horas, todos los dias.
+                  </h3>
+                  <div class="comunicate__section-icon">
+                    <div>
+                      <a class="link-chat" href="">
+                        <i
+                          class="comunicate__icon fas fa-comments fa-4x m-2 p-3"
+                        ></i>
+                      </a>
+                      <h4 class="comunicate__chat-title">Chat en vivo</h4>
+                    </div>
+                    <div>
+                      <a class="link-tel" href="">
+                        <i
+                          class="
+                            comunicate__icon
+                            fas
+                            fa-mobile-alt fa-4x
+                            m-2
+                            p-3
+                          "
+                        ></i>
+                      </a>
+                      <h4 class="comunicate__chat-title">Llamanos</h4>
+                    </div>
                   </div>
                 </div>
               </div>
