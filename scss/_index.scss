@@ -30,7 +30,7 @@
   &__parrafo {
     margin-bottom: 2rem;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     animation-duration: 2.5s;
     animation-name: aparecer;
     animation-iteration-count: initial;
@@ -88,7 +88,7 @@
   }
   &__title {
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
     margin: 1rem;
   }
 }
@@ -130,7 +130,7 @@
     text-decoration: none;
     text-transform: uppercase;
     padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-    font-weight: 500;
+    font-weight: $weight-font;
     border: inherit;
     border-radius: 5px 0;
     cursor: pointer;

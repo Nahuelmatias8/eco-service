@@ -65,7 +65,7 @@ svg {
 .display__parrafo {
   margin-bottom: 2rem;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   animation-duration: 2.5s;
   animation-name: aparecer;
   animation-iteration-count: initial;
@@ -124,7 +124,7 @@ svg {
 }
 .pasos__title {
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 300;
   margin: 1rem;
 }
 
@@ -562,7 +562,7 @@ footer {
 
 .comunicate__title {
   font-size: 1.5rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: center;
 }
 
@@ -589,6 +589,10 @@ footer {
   transform: scale(1.2, 1.2);
   transition: all 0.3s;
   color: #49ab30;
+}
+
+.comunicate__chat-title {
+  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -724,7 +728,7 @@ footer {
 
   .footer__parrafo {
     font-size: 1.2rem;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   .footer__icon i {
@@ -733,7 +737,7 @@ footer {
 
   .footer__parrafo-two {
     font-size: 0.8rem;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   /* -----------------------------------SERVICIOS-------------------------- */
