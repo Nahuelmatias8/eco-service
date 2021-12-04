@@ -4,9 +4,10 @@
   }
   /* -----------------------------------------INDEX---------------------------- */
   .display {
-    padding: 7rem 0 7rem 0;
-    margin: auto;
     background-position: right;
+    &__section{
+      margin: 14rem 0 14rem 0;
+    }
     &__titulo {
       font-size: 1.3rem;
       text-align: center;
