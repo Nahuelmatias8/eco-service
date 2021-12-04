@@ -37,13 +37,13 @@ svg {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  height: 95vh;
   margin: auto;
 }
 .display__section {
   color: white;
   z-index: 1;
-  margin: 19rem 0 19rem 0;
+  padding: 19rem 0 19rem 0;
 }
 .display__titulo {
   margin-bottom: 0.5rem;
@@ -494,7 +494,7 @@ svg {
 }
 
 .ayuda {
-  height: 100vh;
+  height: 95vh;
 }
 .ayuda__title {
   text-transform: uppercase;
@@ -522,7 +522,7 @@ svg {
 }
 
 .contactos {
-  height: 100vh;
+  height: 95vh;
 }
 
 .contactos__title {
@@ -615,10 +615,10 @@ svg {
   /* -----------------------------------------INDEX---------------------------- */
   .display {
     background-position: right;
-    height: 100%;
+    height: 90vh;
   }
   .display__section {
-    margin: 12rem 0 12rem 0;
+    padding: 13rem 0 10rem 0;
   }
   .display__titulo {
     font-size: 1.3rem;
