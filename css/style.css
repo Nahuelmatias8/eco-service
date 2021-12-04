@@ -47,7 +47,7 @@ svg {
 }
 .display__titulo {
   margin-bottom: 0.5rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   margin: 0 0rem 1rem 0rem;
   text-transform: uppercase;
@@ -191,7 +191,7 @@ svg {
 }
 
 /* ---------------------------------SECCION POR QUE RECICLAR------------- */
-.beneficios__title {
+.reciclar__title {
   padding: 2rem 0 2rem 0;
   margin: 0;
   font-size: 3rem;
@@ -201,11 +201,10 @@ svg {
   border-top: solid 2px black;
 }
 
-.section__beneficios {
+.beneficios {
   display: flex;
 }
-
-.section__beneficios .image__beneficios {
+.beneficios__image {
   width: 100%;
   height: 300px;
   display: flex;
@@ -213,43 +212,10 @@ svg {
   align-items: center;
   color: white;
   text-align: center;
-}
-
-.section__beneficios .image__beneficios h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.section__beneficio-two {
-  display: flex;
-}
-
-.section__beneficio-two .image__beneficios {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  color: white;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.section__beneficio-two .image__beneficios h3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.section__beneficios .bosques {
-  background-image: url(../image/pexels-yaroslav-shuraev-1834393.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   position: relative;
   z-index: -2;
 }
-
-.bosques:before {
+.beneficios__image:before {
   z-index: -1;
   content: "";
   width: 100%;
@@ -259,139 +225,59 @@ svg {
   left: 0;
   background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
 }
+.beneficios__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
 
-.section__beneficios .oceanos {
+.bosques {
+  background-image: url(../image/bosques.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.oceano {
   background-image: url(../image/oceano.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  z-index: -2;
 }
 
-.oceanos:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficios .energia {
-  background-color: #ecec0f;
-  position: relative;
-  z-index: -2;
-}
-
-.energia:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficios .residuos {
-  z-index: -2;
-  background-image: url(../image/contaminacion.jpg);
+.residuos {
+  background-image: url(../image/residuos.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.residuos:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficio-two .emiciones {
-  z-index: -2;
-  background-image: url(../image/oso\ polar.jpg);
+.emiciones {
+  background-image: url(../image/emiciones.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.emiciones:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficio-two .petroleo {
-  z-index: -2;
+.petroleo {
   background-image: url(../image/petroleo.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.petroleo:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficio-two .dinero {
-  z-index: -2;
-  background-color: #46b47d;
-  position: relative;
-}
-
-.dinero:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-}
-
-.section__beneficio-two .planeta {
-  z-index: -2;
-  background-image: url(../image/planeta2.jpg);
+.planeta {
+  background-image: url(../image/planeta.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 
-.planeta:before {
-  z-index: -1;
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: linear-gradient(190deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+.energia {
+  background-color: #ecec0f;
+}
+
+.dinero {
+  background-color: #46b47d;
 }
 
 .display__boton-nav {
@@ -465,7 +351,7 @@ footer {
 }
 
 .title__servicios h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #49ab30;
   text-align: center;
@@ -485,16 +371,6 @@ footer {
 .suscripcion {
   padding: 2rem 4rem 2rem 4rem;
   background: #49ab30;
-}
-
-.suscripcion-imagen {
-  text-align: center;
-  padding: 1rem 0 2rem 0;
-}
-
-.suscripcion img {
-  width: 150px;
-  height: 150px;
 }
 
 .suscripcion h2 {
@@ -623,27 +499,24 @@ footer {
   margin-bottom: 2rem;
 }
 
-.display__ayuda h2 {
+.ayuda__title {
   text-transform: uppercase;
   color: #49ab30;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-weight: 500;
   padding: 4rem 0 4rem 0;
   margin-top: 0.5rem;
   margin-bottom: 2rem;
 }
-
-.display__section {
+.ayuda__section {
   padding-bottom: 5rem;
 }
-
-.display__section h4 {
+.ayuda__subtitle {
   font-size: 1.8rem;
   font-weight: 300;
   margin: 0.5rem 0 0.5rem 0;
 }
-
-.display__section p {
+.ayuda__parrafo {
   font-size: 1.4rem;
   font-weight: 300;
   margin: 0 1rem 1rem 1rem;
@@ -683,11 +556,11 @@ footer {
     background-position: right;
   }
   .display__titulo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   .display__parrafo {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
   }
   .display__buttom {
@@ -702,10 +575,13 @@ footer {
     display: block;
   }
   .pasos__title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   /* ---------------------------------INDEX QUIENES SOMOS------------------ */
+  .conocenos__title {
+    font-size: 2rem;
+  }
   .conocenos__parrafo {
     font-size: 1.3rem;
     font-weight: 300;
@@ -720,24 +596,14 @@ footer {
   }
 
   /* ----------------------------INDEX POR QUE RECICLAR----------------- */
-  .section__beneficios {
+  .beneficios {
     display: block;
   }
-
-  .section__beneficios h3 {
+  .beneficios__title {
     font-size: 1.3rem;
   }
-
-  .beneficios__title h2 {
-    font-size: 1.8rem;
-  }
-
-  .section__beneficio-two {
-    display: block;
-  }
-
-  .section__beneficio-two h3 {
-    font-size: 1.5rem;
+  .beneficios__title {
+    font-size: 2rem;
   }
 
   /* -------------------------------NOSOTROS----------------------------- */
@@ -866,29 +732,8 @@ footer {
     display: none;
   }
 
-  .boton__somos {
-    padding-top: 2rem;
-    padding-bottom: 2.3rem;
-  }
-
-  .somos_title h2 {
-    font-size: 1.8rem;
-  }
-
-  .servicios-pasos img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .section__beneficios .image__beneficios h3 {
-    font-size: 1.5rem;
-  }
-
-  .section__beneficio-two .image__beneficios h3 {
-    font-size: 1.5rem;
-  }
-
-  .display__ayuda h2 {
+  /* ----------------------------------AYUDA--------------------------- */
+  .ayuda__title {
     font-size: 1.8rem;
     font-weight: 500;
     padding: 1rem 0 1rem 0;
@@ -896,18 +741,15 @@ footer {
     margin-bottom: 1rem;
     text-align: center;
   }
-
-  .display__section {
+  .ayuda__section {
     padding-bottom: 3rem;
   }
-
-  .display__section h4 {
+  .ayuda__subtitle {
     font-size: 1.3rem;
     font-weight: 300;
     margin: 0.5rem 0 0.5rem 0;
   }
-
-  .display__section p {
+  .ayuda__parrafo {
     font-size: 1.2rem;
     font-weight: 300;
     margin: 0 1rem 1rem 1rem;

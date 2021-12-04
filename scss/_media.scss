@@ -8,11 +8,11 @@
     margin: auto;
     background-position: right;
     &__titulo {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     &__parrafo {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       text-align: center;
     }
     &__buttom {
@@ -26,11 +26,14 @@
     width: 100%;
     display: block;
     &__title{
-      font-size: 1.5rem;
+      font-size: 1.3rem;
     }
   }
   /* ---------------------------------INDEX QUIENES SOMOS------------------ */
   .conocenos{
+    &__title {
+      font-size: 2rem;
+    }
     &__parrafo {
       font-size: 1.3rem;
       font-weight: 300;
@@ -45,21 +48,14 @@
     }
   }
   /* ----------------------------INDEX POR QUE RECICLAR----------------- */
-  .section__beneficios {
+  .beneficios {
     display: block;
-  }
-  .section__beneficios h3 {
-    font-size: 1.3rem;
-  }
-  .beneficios__title h2 {
-    font-size: 1.8rem;
-  }
-
-  .section__beneficio-two {
-    display: block;
-  }
-  .section__beneficio-two h3 {
-    font-size: 1.5rem;
+    &__title{
+      font-size: 1.3rem;
+    }
+    &__title {
+      font-size: 2rem;
+    }
   }
 /* -------------------------------NOSOTROS----------------------------- */
   .agentes{
@@ -183,44 +179,30 @@
   .display__boton-nav {
     display: none;
   }
+  /* ----------------------------------AYUDA--------------------------- */
+  .ayuda {
+    &__title{
+      font-size: 1.8rem;
+      font-weight: $weight-font;
+      padding: 1rem 0 1rem 0;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    &__section {
+      padding-bottom: 3rem;
+    }
+    &__subtitle{
+      font-size: 1.3rem;
+      font-weight: 300;
+      margin: 0.5rem 0 0.5rem 0;
+    }
+  
+    &__parrafo{
+      font-size: 1.2rem;
+      font-weight: 300;
+      margin: 0 1rem 1rem 1rem;
+    }
 
-  .boton__somos {
-    padding-top: 2rem;
-    padding-bottom: 2.3rem;
-  }
-  .somos_title h2 {
-    font-size: 1.8rem;
-  }
-  .servicios-pasos img {
-    width: 150px;
-    height: 150px;
-  }
-  .section__beneficios .image__beneficios h3 {
-    font-size: 1.5rem;
-  }
-  .section__beneficio-two .image__beneficios h3 {
-    font-size: 1.5rem;
-  }
-  .display__ayuda h2 {
-    font-size: 1.8rem;
-    font-weight: $weight-font;
-    padding: 1rem 0 1rem 0;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .display__section {
-    padding-bottom: 3rem;
-  }
-  .display__section h4 {
-    font-size: 1.3rem;
-    font-weight: 300;
-    margin: 0.5rem 0 0.5rem 0;
-  }
-
-  .display__section p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin: 0 1rem 1rem 1rem;
   }
 }
