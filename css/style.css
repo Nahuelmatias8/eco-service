@@ -315,30 +315,30 @@ svg {
   color: #49ab30;
 }
 
-footer {
+.footer {
   background-image: linear-gradient(to right, #727272, #323034);
   color: #f7f7f7;
-  padding: 2rem;
-  margin: 0 auto;
 }
-
 .footer__section {
   text-align: center;
 }
-
 .footer__parrafo {
   font-size: 1.2rem;
   font-weight: 100;
+  padding-top: 1rem;
 }
-
+.footer__icon {
+  padding-bottom: 1rem;
+}
 .footer__parrafo-two {
   font-size: 0.8rem;
-  font-weight: 100;
+  font-weight: 300;
+  padding-bottom: 1rem;
 }
-
 .footer__icon i {
-  margin: 0.8rem 1.2rem 0.8rem 1.2rem;
-  font-size: 30px;
+  margin: 0rem 1.2rem 0rem 1.2rem;
+  font-size: 35px;
+  cursor: pointer;
 }
 
 .servicios__title {
