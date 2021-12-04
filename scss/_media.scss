@@ -5,8 +5,9 @@
   /* -----------------------------------------INDEX---------------------------- */
   .display {
     background-position: right;
+    height: 100%;
     &__section{
-      margin: 14rem 0 14rem 0;
+      margin: 12rem 0 12rem 0;
     }
     &__titulo {
       font-size: 1.3rem;
@@ -176,6 +177,12 @@
   .display__boton-nav {
     display: none;
   }
+  .contactos {
+    height: 100%;
+  }
+  .comunicate{
+    margin: 0;
+  }
   .contactos__title {
     font-size: $media-font;
   }
@@ -190,13 +197,14 @@
   }
   /* ----------------------------------AYUDA--------------------------- */
   .ayuda {
+    height: 100%;
     &__title {
       font-size: $media-font;
       font-weight: $weight-font;
       text-align: center;
     }
     &__section {
-      padding-bottom: 3rem;
+      padding-bottom: 0;
     }
     &__subtitle {
       font-size: 1.3rem;
