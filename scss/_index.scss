@@ -170,7 +170,13 @@
 
 .beneficios {
   display: flex;
+  &__section {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
   &__image {
+    position: relative;
     width: 100%;
     height: 300px;
     display: flex;
@@ -178,11 +184,8 @@
     align-items: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    position: relative;
-    z-index: -2;
   }
   &__image:before {
-    z-index: -1;
     content: "";
     width: 100%;
     height: 100%;
@@ -197,8 +200,23 @@
     );
   }
   &__title {
+    position: relative;
     font-size: 1.5rem;
     font-weight: 400;
+    padding: 1rem;
+    margin: auto;
+  }
+  &__image:hover{
+    transform: scale(1.4);
+    transition: all 1s ease;
+    cursor: pointer;
+  }
+  &__link{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  &__link:hover{
+    color: $color-primario;
   }
 }
 
