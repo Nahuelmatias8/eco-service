@@ -1,4 +1,6 @@
-.servicios__title{
+.servicios {
+  height: 95vh;
+  &__title{
   font-size: $big-font;
   font-weight: $weight-font;
   color: $color-primario;
@@ -7,59 +9,65 @@
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
+  }
+  &__section {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+  &__card {
+    border: solid 2px $color-primario;
+    padding: 15rem 11rem 15rem 11rem ;
+    border-radius: 10px;
+    box-shadow: -5px 3px 9px 0 $color-primario ;
+  }
+}
+.pagos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: 2rem 0 2rem 0;
+  border-bottom: solid 1px black;
+  &__section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-weight: $weight-font;
+  }
+  &__title{
+    color: $color-primario;
+    font-weight: $big-font;
+  }
+  &__icon {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+  }
+  &__icon i {
+    font-size: 50px;
+  }
 }
 
-.conteiner__suscripcion a {
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-}
-.conteiner__suscripcion a:hover {
-  color: white;
-}
-.suscripcion {
-  padding: 2rem 4rem 2rem 4rem;
-  background: $color-primario;
-}
-.suscripcion h2 {
-  margin-bottom: 1.5rem;
-  font-size: 3rem;
-  font-weight: 800;
-  text-align: center;
-}
-.suscripcion h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.8rem;
-  font-weight: 800;
-  text-align: center;
-  border-bottom: solid 2px black;
-}
-.suscripcion h4 {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
-  font-size: 1.3rem;
-  font-weight: 400;
-}
-.card__list .card__list--item {
-  margin-bottom: 0.5rem;
-}
-.conteiner__pagos {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-  padding: 2rem 0 2rem 0;
-}
-.section__pagos {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  font-weight: 400;
-}
-.pagos__icon {
-  display: flex;
-  justify-content: space-between;
-  width: 25%;
-}
-.pagos__icon i {
-  font-size: 50px;
+.empresas {
+  &__title{
+    padding-top: 2rem;
+    margin: auto;
+    color: $color-primario;
+    font-weight: $big-font;
+  }
+  &__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+  }
+  &__image{
+    width: 150px;
+    height: 150px;
+  }
 }

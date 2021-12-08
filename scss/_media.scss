@@ -6,15 +6,12 @@
   .display {
     background-position: right;
     height: 90vh;
-    &__section{
-      padding: 10rem 0 10rem 0;
-    }
     &__titulo {
-      font-size: 1.3rem;
+      font-size: $media-font;
       text-align: center;
     }
     &__parrafo {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       text-align: center;
     }
     &__buttom {
@@ -53,7 +50,7 @@
   .beneficios {
     display: block;
     &__title {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
     }
   }
   .reciclar__title {
@@ -146,32 +143,48 @@
     font-weight: 300;
   }
   /* -----------------------------------SERVICIOS-------------------------- */
-  .conteiner__pagos {
+  .pagos {
     display: block;
+    &__section {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    &__title {
+      margin-bottom: 0.5rem;
+    }
+    &__icon {
+      width: 100%;
+      justify-content: space-evenly;
+    }
   }
-  .section__pagos {
-    width: 100%;
-    text-align: center;
-    margin-bottom: 1rem;
+  .empresas{
+    &__flex{
+      display: block;
+    }
+    &__image {
+      padding: 0.5rem;
+    }
   }
-  .section__pagos h3 {
-    margin-bottom: 0.5rem;
+  .servicios{
+    height: 100%;
+    &__title {
+      font-size: $media-font;
+      font-weight: $weight-font;
+    }
+    &__section{
+      display: block;
+    }
+    &__card {
+      border: solid 2px $color-primario;
+      padding: 8rem 6rem 8rem 6rem ;
+      border-radius: 10px;
+      box-shadow: -5px 3px 9px 0 $color-primario ;
+    }
   }
-  .pagos__icon {
-    width: 100%;
-    justify-content: space-evenly;
-  }
-  .conteiner__suscripcion {
-    display: block;
-  }
-  .suscripcion {
-    margin-bottom: 2rem;
-    padding: 0.5rem;
-  }
-  .servicios__title {
-    font-size: $media-font;
-    font-weight: $weight-font;
-  }
+
   /* -----------------------------------CONTACTOS----------------------- */
 
   .display__boton-nav {
@@ -180,19 +193,19 @@
   .contactos {
     height: 100%;
   }
-  .comunicate{
+  .comunicate {
     margin: 0;
   }
   .contactos__title {
     font-size: $media-font;
   }
   .comunicate__icon {
-    color:$color-primario;
+    color: $color-primario;
   }
   .comunicate__title {
     font-size: 1.3rem;
   }
-  .comunicate__chat-title{
+  .comunicate__chat-title {
     font-size: 1.2rem;
   }
   /* ----------------------------------AYUDA--------------------------- */
