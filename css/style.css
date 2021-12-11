@@ -851,6 +851,7 @@ svg {
     display: none;
   }
   .servicios__carousel--media {
+    display: block;
     margin-bottom: 2rem;
   }
 
