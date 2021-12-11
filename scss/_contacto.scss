@@ -21,13 +21,14 @@
   border: inherit;
   border-radius: 5px 0;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s ease;
 }
 .btn:hover {
   color: white;
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
   background-image: $btn-background-hover;
   border-radius: 0 5px;
+  transition: all 0.4s ease;
 }
 .form {
   padding-bottom: 2rem;
