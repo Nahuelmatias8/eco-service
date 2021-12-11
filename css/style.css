@@ -319,7 +319,7 @@ svg {
   border: inherit;
   border-radius: 5px 0;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.4s ease;
 }
 
 .display__boton-nav:hover {
@@ -327,6 +327,7 @@ svg {
   padding: 0.6rem 2.5rem 0.6rem 2.5rem;
   background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
   border-radius: 0 5px;
+  transition: all 0.4s ease;
 }
 
 .button-nav:focus {
@@ -392,6 +393,12 @@ svg {
   box-shadow: -5px 3px 5px 0 #49ab30;
   background: white;
 }
+.servicios__card:hover {
+  transform: scale(1.1);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  box-shadow: 0 0 5px #49ab30;
+}
 .servicios__logo img {
   width: 300px;
   height: 100px;
@@ -410,6 +417,9 @@ svg {
 }
 .servicios__list--title {
   border-top: solid 1px black;
+}
+.servicios__carousel--media {
+  display: none;
 }
 
 .pagos {
@@ -576,7 +586,6 @@ svg {
 .contactos {
   height: 95vh;
 }
-
 .contactos__title {
   font-size: 3rem;
   color: #49ab30;
@@ -611,7 +620,6 @@ svg {
 .form {
   padding-bottom: 2rem;
 }
-
 .form__section {
   display: flex;
   flex-direction: column;
@@ -623,18 +631,27 @@ svg {
 .comunicate {
   margin: 6rem 0 6rem 0;
 }
-
 .comunicate__title {
   font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 }
-
 .comunicate__section-icon {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+}
+.comunicate__icon {
+  color: black;
+}
+.comunicate__icon:hover {
+  transform: scale(1.2, 1.2);
+  transition: all 0.3s;
+  color: #49ab30;
+}
+.comunicate__chat-title {
+  font-weight: 300;
 }
 
 .link-tel {
@@ -643,20 +660,6 @@ svg {
 
 .link-chat {
   text-decoration: none;
-}
-
-.comunicate__icon {
-  color: black;
-}
-
-.comunicate__icon:hover {
-  transform: scale(1.2, 1.2);
-  transition: all 0.3s;
-  color: #49ab30;
-}
-
-.comunicate__chat-title {
-  font-weight: 300;
 }
 
 @media (max-width: 768px) {
@@ -837,13 +840,18 @@ svg {
     font-weight: 500;
   }
   .servicios__section {
-    display: block;
+    display: none;
   }
   .servicios__card {
     border: solid 2px #49ab30;
-    padding: 8rem 6rem 8rem 6rem;
     border-radius: 10px;
     box-shadow: -5px 3px 9px 0 #49ab30;
+  }
+  .servicios__card:hover {
+    display: none;
+  }
+  .servicios__carousel--media {
+    margin-bottom: 2rem;
   }
 
   .carrefour {
@@ -862,24 +870,20 @@ svg {
   .contactos {
     height: 100%;
   }
-
-  .comunicate {
-    margin: 0;
-  }
-
   .contactos__title {
     font-size: 1.8rem;
   }
 
+  .comunicate {
+    margin: 0;
+  }
   .comunicate__icon {
     color: #49ab30;
   }
-
   .comunicate__title {
     font-size: 1.3rem;
   }
-
-  .comunicate__chat-title {
+  .comunicatee__chat-title {
     font-size: 1.2rem;
   }
 

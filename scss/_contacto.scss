@@ -1,15 +1,15 @@
 .contactos{
   height: 95vh;
-}
-.contactos__title {
-  font-size: $big-font;
-  color: $color-primario;
-  font-weight: $weight-font;
-  text-align: center;
-  padding: 3rem 0 3rem 0;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
+  &__title {
+    font-size: $big-font;
+    color: $color-primario;
+    font-weight: $weight-font;
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+  }
 }
 .btn {
   background-image: $btn-background;
@@ -31,42 +31,43 @@
 }
 .form {
   padding-bottom: 2rem;
-}
-.form__section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  &__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 }
 .comunicate{
   margin: 6rem 0 6rem 0;
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  &__section-icon {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+  }
+  &__icon {
+    color: black;
+  }
+  &__icon:hover {
+    transform: scale(1.2, 1.2);
+    transition: all 0.3s;
+    color: $color-primario;
+  }
+  &__chat-title {
+    font-weight: 300;
+  }
 }
-.comunicate__title {
-  font-size: 1.5rem;
-  font-weight: 300;
-  text-align: center;
-}
-.comunicate__section-icon {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align: center;
-}
+
 .link-tel {
   text-decoration: none;
 }
 .link-chat {
   text-decoration: none;
-}
-.comunicate__icon {
-  color: black;
-}
-.comunicate__icon:hover {
-  transform: scale(1.2, 1.2);
-  transition: all 0.3s;
-  color: $color-primario;
-}
-.comunicate__chat-title {
-  font-weight: 300;
 }

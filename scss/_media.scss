@@ -175,13 +175,18 @@
       font-weight: $weight-font;
     }
     &__section{
-      display: block;
+      display: none;
     }
     &__card {
       border: solid 2px $color-primario;
-      padding: 8rem 6rem 8rem 6rem ;
       border-radius: 10px;
       box-shadow: -5px 3px 9px 0 $color-primario ;
+    }
+    &__card:hover {
+      display: none;
+    }
+    &__carousel--media{ 
+      margin-bottom: 2rem;
     }
   }
   .carrefour {
@@ -198,21 +203,21 @@
   }
   .contactos {
     height: 100%;
+    &__title {
+      font-size: $media-font;
+    }
   }
   .comunicate {
     margin: 0;
-  }
-  .contactos__title {
-    font-size: $media-font;
-  }
-  .comunicate__icon {
-    color: $color-primario;
-  }
-  .comunicate__title {
-    font-size: 1.3rem;
-  }
-  .comunicate__chat-title {
-    font-size: 1.2rem;
+    &__icon {
+      color: $color-primario;
+    }
+    &__title {
+      font-size: 1.3rem;
+    }
+    &e__chat-title {
+      font-size: 1.2rem;
+    }
   }
   /* ----------------------------------AYUDA--------------------------- */
   .ayuda {
