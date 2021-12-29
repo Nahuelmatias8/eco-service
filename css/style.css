@@ -32,6 +32,10 @@ svg {
   width: 100%;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .display {
   background-image: url(../image/fondoindex.jpg);
   background-position: center;
