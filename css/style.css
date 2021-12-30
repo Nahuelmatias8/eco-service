@@ -384,45 +384,82 @@ body {
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
-.servicios__section {
+
+.servicios {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
   align-items: center;
-  padding-bottom: 3rem;
+  justify-content: center;
 }
-.servicios__card {
-  border: solid 1px #49ab30;
-  border-radius: 10px;
-  box-shadow: -5px 3px 5px 0 #49ab30;
-  background: white;
-}
-.servicios__card:hover {
-  transform: scale(1.1);
-  transition: all 0.4s ease;
-  cursor: pointer;
-  box-shadow: 0 0 5px #49ab30;
-}
-.servicios__logo img {
+.servicios .card {
+  position: relative;
   width: 300px;
-  height: 100px;
+  height: 350px;
+  margin: 30px 50px 70px 50px;
 }
-.servicios__title--card {
+.servicios .face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.servicios .front {
+  transform: perspective(600px) rotateY(0deg);
+  box-shadow: 0 5px 10px #000;
+}
+.servicios img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.servicios h3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: 500;
-  margin: 0.5rem;
-  border-bottom: solid 1px black;
 }
-.servicios__list--section {
+.servicios .back {
+  transform: perspective(600px) rotateY(180deg);
+  background: #032336;
+  padding: 15px;
+  color: #f3f3f3;
   display: flex;
   flex-direction: column;
-  margin-top: 6rem;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0 5px 10px #000;
 }
-.servicios__list--title {
-  border-top: solid 1px black;
+.servicios .link {
+  border-top: solid 1px #f3f3f3;
+  height: 50px;
+  line-height: 50px;
 }
-.servicios__carousel--media {
+.servicios a {
+  color: #f3f3f3;
+}
+.servicios h4 {
+  font-size: 30px;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+.servicios p {
+  letter-spacing: 1px;
+}
+.servicios .card:hover .front {
+  transform: perspective(600px) rotateY(180deg);
+}
+.servicios .card:hover .back {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+.carousel {
   display: none;
 }
 
@@ -812,6 +849,48 @@ body {
   }
 
   /* -----------------------------------SERVICIOS-------------------------- */
+  .servicios__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 20px;
+  }
+
+  .servicios {
+    display: none;
+  }
+
+  .carousel {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .carousel__media {
+    text-align: center;
+  }
+  .carousel h3 {
+    margin: 10px;
+  }
+  .carousel-btn {
+    background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-weight: 500;
+    border: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .carousel-btn:hover {
+    color: white;
+    background-image: linear-gradient(to right top, #34ff00, #3cef16, #42df20, #46cf27, #48bf2c, #49b62e, #49ae30, #49a531, #49a132, #499c33, #489833, #489434);
+    border-radius: 0 5px;
+    transition: all 0.2s ease;
+  }
+  .carousel .link-media {
+    text-decoration: none;
+    color: white;
+  }
+
   .pagos {
     display: block;
   }
@@ -838,29 +917,6 @@ body {
   }
   .empresas__image {
     padding: 0.5rem;
-  }
-
-  .servicios {
-    height: 100%;
-  }
-  .servicios__title {
-    font-size: 1.8rem;
-    font-weight: 500;
-  }
-  .servicios__section {
-    display: none;
-  }
-  .servicios__card {
-    border: solid 2px #49ab30;
-    border-radius: 10px;
-    box-shadow: -5px 3px 9px 0 #49ab30;
-  }
-  .servicios__card:hover {
-    display: none;
-  }
-  .servicios__carousel--media {
-    display: block;
-    margin-bottom: 2rem;
   }
 
   .carrefour {

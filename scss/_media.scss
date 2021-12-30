@@ -143,6 +143,45 @@
     font-weight: 300;
   }
   /* -----------------------------------SERVICIOS-------------------------- */
+  .servicios__title {
+    font-size: $media-font;
+    font-weight: $weight-font;
+    padding: 20px;
+  }
+  .servicios {
+    display: none;
+  }
+  .carousel {
+    display: block;
+    margin-bottom: 20px;
+    &__media{
+      text-align: center;
+    }
+    h3 {
+      margin: 10px;
+    }
+    &-btn {
+      background-image: $btn-background;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+    font-weight: $weight-font;
+    border: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    }
+    &-btn:hover{
+      color: white;
+      background-image: $btn-background-hover;
+      border-radius: 0 5px;
+      transition: all 0.2s ease;
+    }
+    .link-media {
+      text-decoration: none;
+      color: white;
+    }
+  }
   .pagos {
     display: block;
     &__section {
@@ -169,28 +208,6 @@
     }
     &__image {
       padding: 0.5rem;
-    }
-  }
-  .servicios{
-    height: 100%;
-    &__title {
-      font-size: $media-font;
-      font-weight: $weight-font;
-    }
-    &__section{
-      display: none;
-    }
-    &__card {
-      border: solid 2px $color-primario;
-      border-radius: 10px;
-      box-shadow: -5px 3px 9px 0 $color-primario ;
-    }
-    &__card:hover {
-      display: none;
-    }
-    &__carousel--media{ 
-      display: block;
-      margin-bottom: 2rem;
     }
   }
   .carrefour {
