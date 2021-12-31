@@ -643,6 +643,7 @@ body {
 }
 
 .btn {
+  margin-top: 2rem;
   background-image: linear-gradient(to right top, #489434, #489833, #499c33, #49a132, #49a531, #49ae30, #49b62e, #48bf2c, #46cf27, #42df20, #3cef16, #34ff00);
   color: black;
   text-decoration: none;
