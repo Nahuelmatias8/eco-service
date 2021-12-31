@@ -125,10 +125,10 @@ justify-content: center;
   }
   &__flex{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     align-content: center;
-    padding: 1rem;
     margin: auto;
     width: 100%;
   }

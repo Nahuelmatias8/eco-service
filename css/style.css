@@ -499,10 +499,10 @@ body {
 }
 .empresas__flex {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 1rem;
   margin: auto;
   width: 100%;
 }
@@ -909,14 +909,8 @@ body {
     justify-content: space-evenly;
   }
 
-  .empresas__flex {
-    display: block;
-  }
   .empresas__title {
     text-align: center;
-  }
-  .empresas__image {
-    padding: 0.5rem;
   }
 
   .carrefour {
