@@ -7,8 +7,19 @@
     background-position: right;
     height: 90vh;
     &__titulo {
+      display: none;
+    }
+    &__titulo--media {
+      display: block;
       font-size: $media-font;
       text-align: center;
+      font-weight: $weight-font;
+      margin-bottom: 0.5rem;
+      margin: 0 0rem 1rem 0rem;
+      text-transform: uppercase;
+      animation-duration: 1s;
+      animation-name: aparecer;
+      animation-iteration-count: initial;
     }
     &__parrafo {
       font-size: 1.3rem;

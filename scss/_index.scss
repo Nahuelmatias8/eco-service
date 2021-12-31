@@ -26,6 +26,9 @@ body {
     animation-name: aparecer;
     animation-iteration-count: initial;
   }
+  &__titulo--media {
+    display: none;
+  }
   @keyframes aparecer {
     0% {
       opacity: 0;
